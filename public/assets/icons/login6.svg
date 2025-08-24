@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 126">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #3f57e8;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke: #151c44;
+      }
+    </style>
+  </defs>
+  <g id="Dark_Icons" data-name="Dark Icons">
+    <g id="ICON_Connections">
+      <ellipse class="cls-1" cx="64" cy="63.03" rx="16.4" ry="16.13"/>
+      <path class="cls-2" d="m92.9,91.45c16-15.75,15.99-41.28-.03-57.01-16.02-15.74-41.98-15.72-57.98.03-15.99,15.74-15.99,41.24,0,56.98m72.57,14.31c24.03-23.6,24.06-61.89.05-85.52-24-23.63-62.94-23.65-86.97-.05-24.03,23.6-24.06,61.89-.05,85.52.02.02.04.04.05.05"/>
+      <path class="cls-1" d="m64,91.25c13.53,0,24.6,14.51,24.6,32.25h-49.2c0-17.74,11.07-32.25,24.6-32.25Z"/>
+    </g>
+  </g>
+</svg>

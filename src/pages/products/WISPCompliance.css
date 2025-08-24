@@ -1,0 +1,77 @@
+.wisp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.wisp-content {
+  flex: 1;
+  max-width: 520px;
+}
+
+.wisp-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.wisp-title .highlight {
+  color: #6a00ff;
+}
+
+.wisp-desc {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.wisp-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: #6a00ff;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #5200cc;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #f2f2f2;
+}
+
+.wisp-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* keep alignment clean */
+  align-items: center;
+  padding-left: 2rem; /* adds spacing between text and image */
+}
+
+.wisp-img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}

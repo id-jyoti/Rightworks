@@ -1,0 +1,43 @@
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #f9f9fb;
+  flex-wrap: wrap;
+}
+
+.pricing-content {
+  max-width: 600px;
+}
+
+.pricing-subtitle {
+  color: #2d00cc; /* purple */
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.pricing-title {
+  font-size: 3rem !important;  /* Force it */
+  font-weight: 700;
+  color: #4b00d1 !important; /* bold purple heading */
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.pricing-description {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.pricing-image {
+  margin-top: 2rem;
+}
+
+.pricing-image img {
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,117 @@
+.pricingwisp {
+  background-color: #1a0044;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+}
+
+.pricingwisp-content {
+  max-width: 600px;
+}
+
+.pricingwisp-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.pricingwisp-content .highlight {
+  color: #ccff00;
+}
+
+.pricingwisp-content ul {
+  list-style: none;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+.pricingwisp-content ul li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricingwisp-content ul li::before {
+  content: "●";
+  color: #ccff00;
+  position: absolute;
+  left: 0;
+}
+
+.pricingwisp-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-buy {
+  background-color: #ccff00;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-buy:hover {
+  opacity: 0.9;
+}
+
+.btn-meeting {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-meeting:hover {
+  background: white;
+  color: black;
+}
+
+.pricingwisp-image {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.pricingwisp-image img {
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.label-top-left {
+  top: 10%;
+  left: -20%;
+}
+
+.label-bottom-left {
+  bottom: 15%;
+  left: -25%;
+}
+
+.label-right {
+  top: 35%;
+  right: -40%;
+}

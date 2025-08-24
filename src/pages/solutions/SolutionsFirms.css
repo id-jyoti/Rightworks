@@ -1,0 +1,52 @@
+.solutions-firms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #1a0b2e; /* deep purple */
+  color: white;
+  padding: 4rem 6rem;
+  gap: 2rem;
+}
+
+.solutions-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.solutions-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+.btn-started {
+  background-color: #d8ff00; /* neon yellow/green */
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-started:hover {
+  background-color: #c0e600;
+}
+
+.arrow {
+  font-size: 1.2rem;
+}
+
+.solutions-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

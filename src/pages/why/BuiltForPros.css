@@ -1,0 +1,81 @@
+/* --- First Section --- */
+.pros-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1b004b;
+  border-radius: 20px;
+  padding: 80px 100px;   /* increased padding */
+  margin-bottom: 100px;  /* more breathing room */
+  color: #fff;
+  min-height: 320px;     /* ensures consistent height */
+}
+
+.pros-text {
+  flex: 1.2;
+  font-size: 40px;      /* larger headline */
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pros-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pros-image img {
+  border-radius: 12px;
+  max-width: 450px;     /* slightly larger */
+  height: auto;
+}
+/* --- Second Section --- */
+.pros-story {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 60px;
+}
+
+.story-image {
+  flex: 1;
+}
+
+.story-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.story-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.story-text p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.learn-more {
+  background: #6c00ff;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.learn-more:hover {
+  background: #5200cc;
+}

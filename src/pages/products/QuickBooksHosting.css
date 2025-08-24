@@ -1,0 +1,269 @@
+/* ===== Common Layout ===== */
+.quickbooks-hosting,
+.quickbooks-provider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 6rem;
+  background: #fff;
+  gap: 2rem;
+}
+
+.quickbooks-hosting img,
+.quickbooks-provider img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Section 1: Hosting ===== */
+.quickbooks-hosting-content {
+  max-width: 600px;
+}
+
+.quickbooks-hosting .tagline {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.quickbooks-hosting .intro {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.quickbooks-hosting .description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* ===== Section 2: Provider ===== */
+.quickbooks-provider-content {
+  max-width: 600px;
+}
+
+.quickbooks-provider .section-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-bottom: 0.6rem;
+}
+
+.quickbooks-provider .section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.quickbooks-provider .section-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* ===== CTA Buttons (Shared) ===== */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background: #6b21a8;
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #581c87;
+}
+
+.btn-outline {
+  border: 2px solid #333;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* ===== Section 3: Features & Benefits ===== */
+.quickbooks-features {
+  padding: 5rem 6rem;
+  text-align: center;
+  background: #fff;
+}
+
+.features-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.features-subtitle { 
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-bottom: 0.8rem;
+}
+
+.features-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.features-description {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  text-align: left;
+}
+
+.feature-card img {
+  width: 40px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  color: #111;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .feature-card {
+    text-align: center;
+  }
+
+  .feature-card img {
+    margin: 0 auto 1rem;
+  }
+}
+
+/* ===== Section 4: Demo Section ===== */
+.quickbooks-demo {
+  padding: 5rem 6rem;
+  text-align: center;
+  background: #f9fafb;
+}
+
+.demo-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-bottom: 1rem;
+}
+
+.demo-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.demo-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 850px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.demo-video img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ====== FAQ (Accordion) ====== */
+.quickbooks-faq { padding: 5rem 6rem; background: #fff; }
+
+.faq-title {
+  font-size: 2.2rem; font-weight: 800; text-align: center; margin-bottom: 2.2rem;
+}
+
+.faq-list { max-width: 900px; margin: 0 auto; }
+
+.faq-item { border: 1px solid #e6e6ef; border-radius: 12px; margin-bottom: 1rem; }
+
+.faq-question {
+  width: 100%;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: left;
+  border-radius: 12px;
+}
+
+.faq-item.open .faq-question {
+  box-shadow: 0 0 0 2px #6b21a8 inset;
+}
+
+.faq-toggle { font-size: 1.4rem; color: #6b21a8; margin-left: 1rem; }
+
+.faq-answer {
+  padding: 0 1.25rem 1.1rem 1.25rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 992px) {
+  .quickbooks-hosting,
+  .quickbooks-provider { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
+
+  .quickbooks-features,
+  .quickbooks-demo,
+  .quickbooks-faq { padding: 3.5rem 1.5rem; }
+
+  .features-grid { grid-template-columns: 1fr; }
+  .feature-card { text-align: center; }
+  .feature-card img { margin: 0 auto 1rem; }
+}

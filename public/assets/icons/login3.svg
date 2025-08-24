@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.91 128">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #3f57e8;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        stroke: #151c44;
+      }
+    </style>
+  </defs>
+  <g id="Dark_Icons" data-name="Dark Icons">
+    <g id="ICON_Connected-collaboration">
+      <path class="cls-2" d="m10.36,2.5h62.88v45.1H10.36V2.5Zm39.3,61.5H2.5v-4.1l7.86-12.3m74.68-16.4h-11.79m27.51,8.2v-8.2h-7.86m7.86,24.6v-8.2m-19.65,16.4v-4.1l-7.86-12.3"/>
+      <path class="cls-1" d="m49.66,64h62.88v45.1h-62.88v-45.1Zm0,45.1l-7.86,12.3v4.1h78.61v-4.1l-7.86-12.3m-74.68-12.3h11.79m-27.51-8.2v8.2h7.86m-7.86-24.6v8.2"/>
+    </g>
+  </g>
+</svg>

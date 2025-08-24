@@ -1,0 +1,83 @@
+.transactionpro {
+  background-color: #1b0044; /* dark purple background */
+  padding: 4rem 2rem;
+  color: white;
+}
+
+.transactionpro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.transactionpro-content {
+  flex: 1;
+}
+
+.transactionpro-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.transactionpro-content .highlight {
+  color: #fff; /* Keep same color as text but bold */
+}
+
+.transactionpro-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.transactionpro-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #d6f500; /* Yellow */
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #c4df00;
+}
+
+.btn-secondary {
+  border: 2px solid #d6f500;
+  color: #fff;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #d6f500;
+  color: #000;
+}
+
+.transactionpro-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.transactionpro-img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}

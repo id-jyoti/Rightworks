@@ -1,0 +1,29 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  border-bottom: 1px solid #eee;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  z-index: 100;
+}
+
+/* Logo */
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a0066; /* dark purple */
+}
+
+.logo-sub {
+  font-size: 10px;
+  color: #888;
+}

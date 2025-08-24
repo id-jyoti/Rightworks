@@ -1,0 +1,77 @@
+.webinars {
+  font-family: Arial, sans-serif;
+  color: #1a1a1a;
+}
+
+/* Header */
+.webinars-header {
+  background-color: #20004b; /* dark purple */
+  color: #fff;
+  padding: 60px 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.webinars-title {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Filter Section */
+.webinars-filter {
+  display: flex;
+  gap: 16px;
+  padding: 20px 40px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+
+.search-wrapper {
+  flex: 1;
+  min-width: 220px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.select-wrapper {
+  min-width: 200px;
+}
+
+.webinars-select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #fff;
+}
+
+/* Filter Button */
+.filter-btn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-btn:hover {
+  background: #333;
+}
+
+.filter-icon {
+  font-size: 16px;
+}

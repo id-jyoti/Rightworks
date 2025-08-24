@@ -1,0 +1,149 @@
+.advocates {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* General Headings */
+.advocates h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: inherit; /* keeps white in dark sections, black in light */
+  text-align: center;
+}
+
+/* Hero Section */
+.advocates-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: #1b005f;
+  color: white;
+}
+
+.advocates-hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.advocates-hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.advocates-breadcrumb {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.advocates-btn {
+  background: transparent;
+  border: 2px solid yellow;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  color: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.advocates-hero-image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* How it works */
+.advocates-how {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.advocates-steps {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.advocates-step h3 {
+  color: purple;
+  font-size: 2rem;
+}
+
+.advocates-step h4 {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+/* Qualification Section */
+.advocates-qualification {
+  background: #f5f5f5;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.advocates-qualify-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.advocates-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.advocates-icon {
+  font-size: 2rem;
+  color: purple;
+  margin-bottom: 1rem;
+}
+
+/* Advocate Programs */
+.advocates-programs {
+  background: #1b005f;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.advocates-program-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.advocates-program-card {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.advocates-program-card img {
+  width: 100%;
+  height: auto;
+}
+
+.advocates-program-text {
+  padding: 1.5rem;
+}
+
+.advocates-program-text h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.advocates-program-text p {
+  margin-bottom: 1.5rem;
+}

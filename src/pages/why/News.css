@@ -1,0 +1,121 @@
+.news-page {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* ---------- HERO SECTION ---------- */
+.news-hero {
+  background-color: #23005a; /* Dark purple background */
+  padding: 60px 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.news-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.news-hero p {
+  font-size: 1rem;
+  color: #cfcfcf;
+  max-width: 700px;
+}
+
+/* ---------- FILTERS SECTION ---------- */
+.news-filters {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.filter-dropdown {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.filter-btn {
+  padding: 12px 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #333;
+}
+
+/* ---------- LATEST NEWS SECTION ---------- */
+.latest-news {
+  padding: 40px 20px;
+}
+
+.latest-news h2 {
+  font-size: 1.5rem;
+  color: #5b2e91;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ---------- NEWS LIST ---------- */
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.news-meta {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.no-results {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}

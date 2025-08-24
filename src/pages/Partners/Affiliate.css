@@ -1,0 +1,164 @@
+.affiliate {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* Hero Section */
+.affiliate-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: #1b005f;
+  color: white;
+}
+
+.affiliate-hero-text {
+  max-width: 50%;
+}
+
+.affiliate-hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.apply-btn {
+  background: #dfff00;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #c5e000;
+}
+
+.affiliate-hero-image img {
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+/* Program Section */
+.affiliate-program {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background: #f8f6fb;
+}
+
+.affiliate-program-text {
+  max-width: 50%;
+}
+
+.affiliate-program-text h4 {
+  color: #6200ee;
+  margin-bottom: 0.5rem;
+}
+
+.affiliate-program-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.affiliate-program-text p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.affiliate-program-image img {
+  max-width: 450px;
+  border-radius: 12px;
+}
+
+/* How it Works */
+.affiliate-how {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.affiliate-how-text {
+  max-width: 50%;
+}
+
+.affiliate-how-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.affiliate-how-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.affiliate-how-text ul li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+/* FAQ Section */
+.affiliate-faq {
+  padding: 3rem;
+  background: #f8f8f8;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.faq-left {
+  flex: 1;
+}
+
+.faq-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;   /* Bold */
+  color: #030105;     /* Highlighted in theme purple */
+}
+
+
+.faq-left p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-left a {
+  color: #6200ee;
+  text-decoration: none;
+}
+
+.faq-left a:hover {
+  text-decoration: underline;
+}
+
+.faq-right {
+  flex: 2;
+}
+
+.faq-right details {
+  margin-bottom: 1rem;
+  background: #f2f2f2;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.faq-right summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #222;
+}
+
+.faq-right p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}

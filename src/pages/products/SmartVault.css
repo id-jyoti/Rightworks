@@ -1,0 +1,125 @@
+.smartvault-container {
+  font-family: Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.smartvault-hero {
+  background: #4b007d;
+  color: white;
+  padding: 80px 40px;
+  text-align: left;
+}
+.smartvault-hero-text .smartvault-highlight {
+  color: #c28cff;
+  font-weight: 600;
+}
+.smartvault-hero h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+.smartvault-sub-text {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.smartvault-cta-btn {
+  background: #d4ff00;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.smartvault-cta-btn:hover {
+  background: #c1e600;
+}
+
+/* Security Section */
+.smartvault-security {
+  padding: 60px 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.smartvault-security-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Left Image */
+.smartvault-security-image {
+  flex: 1;
+  min-width: 50%;
+}
+.smartvault-security-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Text */
+.smartvault-security-text {
+  flex: 1;
+  padding: 40px;
+}
+.smartvault-security-text .smartvault-highlight {
+  color: #6b21a8;
+  font-weight: bold;
+}
+.smartvault-security-text h2 {
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+.smartvault-security-text p {
+  color: #444;
+}
+
+/* Operations Section */
+.smartvault-operations {
+  background: #1b0033;
+  color: white;
+  padding: 80px 40px;
+  text-align: center;
+}
+.smartvault-operations .smartvault-highlight {
+  color: #d4ff00;
+  font-weight: bold;
+}
+.smartvault-operations h2 {
+  max-width: 800px;
+  margin: 20px auto 40px;
+  font-size: 1.8rem;
+}
+.smartvault-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.smartvault-feature-card {
+  background: #2a004d;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: center;
+}
+.smartvault-feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.smartvault-feature-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
