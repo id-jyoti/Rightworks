@@ -10,7 +10,7 @@ const supportItems = [
   },
   {
     icon: <FileText size={40} className="support-icon" />,
-    title: "Transaction Pro",
+    title: "Transaction Pr",
     desc: "Easily manage data transfers between QuickBooks and Excel",
     phone: "888-297-6172",
   },
