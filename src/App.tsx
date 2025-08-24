@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Support from "./pages/Support";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 import Login from "./pages/Login";
 import Search from "./pages/Search";
 import CloudPremier from "./pages/products/CloudPremier";
@@ -65,6 +66,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/search" element={<Search />} />
             <Route path="/" element={<Home />} />
+            <Route path="/scroll-to-top" element={<ScrollToTop />} />
+
             // Products
             <Route path="/products/cloud-premier" element={<CloudPremier />} />
             <Route path="/products/cloud-hosting" element={<CloudHosting />} />
