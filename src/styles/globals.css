@@ -1,0 +1,85 @@
+/* ==============================
+   Global Tailwind Styles (v4)
+   Mobile-Responsive Defaults
+   ============================== */
+
+/* Tailwind v4 imports */
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* --- Base Styles --- */
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%; /* Prevent font auto-scaling on iOS */
+  scroll-behavior: smooth;        /* Smooth scrolling */
+}
+
+body {
+  @apply w-full min-h-screen bg-white text-gray-900 antialiased;
+  overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+}
+
+/* --- Media Elements (responsive by default) --- */
+img,
+video,
+iframe {
+  @apply max-w-full h-auto;
+  display: block;
+}
+
+/* --- Container Utility (global default padding) --- */
+.container {
+  @apply px-4 sm:px-6 lg:px-8 mx-auto w-full;
+  max-width: 1280px; /* Keeps content readable on ultra-wide screens */
+}
+
+/* --- Typography --- */
+h1, .h1 {
+  @apply text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight;
+}
+h2, .h2 {
+  @apply text-xl sm:text-2xl lg:text-4xl font-semibold leading-snug;
+}
+h3, .h3 {
+  @apply text-lg sm:text-xl lg:text-2xl font-medium;
+}
+p {
+  @apply text-base sm:text-lg leading-relaxed;
+}
+
+/* --- Links --- */
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+}
+
+/* --- Buttons --- */
+.btn {
+  @apply inline-block px-4 py-2 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-700 transition;
+}
+.btn-outline {
+  @apply inline-block px-4 py-2 rounded-lg font-medium border border-gray-300 text-gray-700 hover:bg-gray-100 transition;
+}
+
+/* --- Forms --- */
+input, textarea, select {
+  @apply w-full px-3 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none;
+}
+label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+/* --- Utilities for mobile responsiveness --- */
+.responsive-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.responsive-nav {
+  @apply flex flex-col sm:flex-row justify-between items-center gap-4;
+}
+
+.hide-mobile {
+  @apply hidden sm:block;
+}
+.show-mobile {
+  @apply block sm:hidden;
+}

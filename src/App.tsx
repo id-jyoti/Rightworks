@@ -57,7 +57,7 @@ function App() {
         {/* Topbar + Header always visible */}
         <TopBar />
         <Header />
-      
+        <ScrollToTop />
         {/* Page Content */}
         <main>
           <Routes>
