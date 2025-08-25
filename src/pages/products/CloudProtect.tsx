@@ -16,8 +16,8 @@ const CloudProtect: React.FC = () => {
         </p>
 
         <div className="cp-buttons">
-          <button className="btn-primary">GET CLOUD PROTECT →</button>
-          <button className="btn-secondary">VIEW PLANS →</button>
+          <button className="cp-btn-primary">GET CLOUD PROTECT →</button>
+          <button className="cp-btn-secondary">VIEW PLANS →</button>
         </div>
       </div>
 

@@ -40,32 +40,40 @@
   gap: 1rem;
 }
 
-.btn {
-  display: inline-block;
+/* Unique button styles (no global conflicts) */
+.tp-btn-primary,
+.tp-btn-secondary {
+  display: flex;                     /* flex ensures text is always centered */
+  align-items: center;
+  justify-content: center;
   padding: 0.9rem 1.8rem;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 2rem;
   text-decoration: none;
   transition: all 0.3s ease;
+  line-height: 1;                    /* prevents extra spacing */
 }
 
-.btn-primary {
+/* Primary button */
+.tp-btn-primary {
   background-color: #d6f500; /* Yellow */
   color: #000;
+  border: none;
 }
 
-.btn-primary:hover {
+.tp-btn-primary:hover {
   background-color: #c4df00;
 }
 
-.btn-secondary {
+/* Secondary button */
+.tp-btn-secondary {
   border: 2px solid #d6f500;
   color: #fff;
   background: transparent;
 }
 
-.btn-secondary:hover {
+.tp-btn-secondary:hover {
   background-color: #d6f500;
   color: #000;
 }

@@ -40,31 +40,35 @@
   gap: 1rem;
 }
 
-.btn-primary {
+/* Primary button */
+.cp-btn-primary {
   background: #6a00ff;
-  color: #2b2424;
+  color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.cp-btn-primary:hover {
   background: #5200cc;
 }
 
-.btn-secondary {
+/* Secondary button (fixed unique name) */
+.cp-btn-secondary {
   background: #fff;
-  color: #140808;
+  color: #000;
   border: 2px solid #000;
   padding: 0.8rem 1.5rem;
   border-radius: 2rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.btn-secondary:hover {
+.cp-btn-secondary:hover {
   background: #f2f2f2;
 }
 

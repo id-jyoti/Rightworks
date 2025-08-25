@@ -18,8 +18,8 @@ const TransactionPro: React.FC = () => {
             time and ensuring data accuracy.
           </p>
           <div className="transactionpro-buttons">
-            <a href="#" className="btn btn-primary">TRY FOR FREE →</a>
-            <a href="#" className="btn btn-secondary">BUY NOW →</a>
+            <a href="#" className="tp-btn-primary">TRY FOR FREE →</a>
+            <a href="#" className="tp-btn-secondary">BUY NOW →</a>
           </div>
         </div>
 

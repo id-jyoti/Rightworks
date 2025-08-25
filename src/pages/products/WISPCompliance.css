@@ -34,7 +34,8 @@
   gap: 1rem;
 }
 
-.btn-primary {
+/* Primary button */
+.wisp-btn-primary {
   background: #6a00ff;
   color: #fff;
   border: none;
@@ -42,13 +43,15 @@
   border-radius: 2rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.wisp-btn-primary:hover {
   background: #5200cc;
 }
 
-.btn-secondary {
+/* Secondary button */
+.wisp-btn-secondary {
   background: #fff;
   color: #000;
   border: 2px solid #000;
@@ -56,18 +59,19 @@
   border-radius: 2rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.btn-secondary:hover {
+.wisp-btn-secondary:hover {
   background: #f2f2f2;
 }
 
 .wisp-image {
   flex: 1;
   display: flex;
-  justify-content: flex-start; /* keep alignment clean */
+  justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem; /* adds spacing between text and image */
+  padding-left: 2rem;
 }
 
 .wisp-img {

@@ -16,8 +16,8 @@ const WISPCompliance: React.FC = () => {
         </p>
 
         <div className="wisp-buttons">
-          <button className="btn-primary">BUY NOW →</button>
-          <button className="btn-secondary">BOOK A MEETING →</button>
+          <button className="wisp-btn-primary">BUY NOW →</button>
+          <button className="wisp-btn-secondary">BOOK A MEETING →</button>
         </div>
       </div>
 

@@ -6,6 +6,9 @@
 /* Tailwind v4 imports */
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* Custom global styles */
 
 /* --- Base Styles --- */
 html {
