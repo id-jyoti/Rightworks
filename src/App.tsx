@@ -39,7 +39,7 @@ import News from "./pages/why/News";
 import Reviews from "./pages/why/Reviews";
 import CaseStudySutton from "./pages/CaseStudySutton";
 import SmartVault from "./pages/products/SmartVault";
-import Offers from "./pages/Partners/Offers";  
+import Offers from "./pages/Partners/Offers";
 import Become from "./pages/Partners/Become";
 import Advocates from "./pages/Partners/Advocates"; // if needed
 import TransactionProAffiliate from "./pages/Partners/Affiliate"; // new import
