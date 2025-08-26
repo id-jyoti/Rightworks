@@ -55,7 +55,8 @@ body {
 .search-fullscreen {
   position: fixed;
   inset: 0;
-  background: #f3f3f3; /* light gray background */
+  background: #f3f3f3;
+  /* light gray background */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,7 +141,8 @@ body {
 
 /* CTA Button */
 .header-cta .cta-btn {
-  background: #5a00ff; /* bright purple */
+  background: #5a00ff;
+  /* bright purple */
   color: #fff;
   border: none;
   border-radius: 999px;
@@ -152,7 +154,8 @@ body {
 }
 
 .header-cta .cta-btn:hover {
-  background: #4300c9; /* darker purple */
+  background: #4300c9;
+  /* darker purple */
   transform: translateY(-1px);
 }
 
@@ -304,14 +307,17 @@ body {
 .hero {
   text-align: center;
   padding: 6rem 1rem;
-  background: white; /* ✅ White background */
-  color: #0f172a; /* Dark text */
+  background: white;
+  /* ✅ White background */
+  color: #0f172a;
+  /* Dark text */
 }
 
 .hero-tagline {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #ef4444; /* red */
+  color: #ef4444;
+  /* red */
   margin-bottom: 1rem;
 }
 
@@ -322,7 +328,8 @@ body {
 }
 
 .hero-title .highlight {
-  color: #000; /* keep accounting black */
+  color: #000;
+  /* keep accounting black */
 }
 
 .gradient-text {
@@ -354,7 +361,8 @@ body {
 }
 
 .stars {
-  color: #facc15; /* yellow stars */
+  color: #facc15;
+  /* yellow stars */
   font-size: 1.25rem;
 }
 
@@ -391,7 +399,8 @@ body {
 .feature-icon {
   width: 40px;
   height: 40px;
-  color: #6d28d9; /* purple */
+  color: #6d28d9;
+  /* purple */
   margin-bottom: 1rem;
 }
 
@@ -410,7 +419,8 @@ body {
 
 .feature-btn {
   display: inline-block;
-  background: #6d28d9; /* purple */
+  background: #6d28d9;
+  /* purple */
   color: white;
   font-weight: 600;
   font-size: 0.95rem;
@@ -432,7 +442,8 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  background: #f3e8ff; /* light lavender */
+  background: #f3e8ff;
+  /* light lavender */
 }
 
 .case-content {
@@ -514,12 +525,16 @@ body {
 
 /* Partners Section */
 .partners {
-  background: #e9d5ff; /* light lavender */
+  background: #e9d5ff;
+  /* light lavender */
   text-align: center;
   padding: 2rem 1rem;
-  width: 100%;              /* full width */
-  margin: 0;                /* remove side spacing */
-  box-sizing: border-box;   /* include padding inside width */
+  width: 100%;
+  /* full width */
+  margin: 0;
+  /* remove side spacing */
+  box-sizing: border-box;
+  /* include padding inside width */
 }
 
 .partners-text {
@@ -556,7 +571,8 @@ body {
   padding: 3rem 1rem;
   background: #fff;
   flex-wrap: wrap;
-  width: 100%;              /* also full width */
+  width: 100%;
+  /* also full width */
   box-sizing: border-box;
 }
 
@@ -569,7 +585,8 @@ body {
 .stat-item h3 {
   font-size: 2rem;
   font-weight: 800;
-  color: #6d28d9; /* purple */
+  color: #6d28d9;
+  /* purple */
   margin-bottom: 0.5rem;
 }
 
@@ -590,6 +607,7 @@ body {
   .stats {
     flex-direction: column;
   }
+
   .stat-divider {
     display: none;
   }
@@ -610,7 +628,8 @@ body {
 }
 
 .awards-title span {
-  color: #6d28d9; /* purple highlight */
+  color: #6d28d9;
+  /* purple highlight */
 }
 
 .awards-rating {
@@ -626,7 +645,8 @@ body {
 }
 
 .stars {
-  color: #ef4444; /* red for stars */
+  color: #ef4444;
+  /* red for stars */
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -655,8 +675,8 @@ body {
 
 
 /* ================================
-  
- 
+
+
 /*Support*/
 .support-container {
   background: #f9fafb;
@@ -688,7 +708,7 @@ body {
   background: #fff;
   padding: 1.5rem;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -696,7 +716,7 @@ body {
 }
 
 .support-card:hover {
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .support-icon {
@@ -820,7 +840,7 @@ body {
   background: #fff;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card h3 {
@@ -869,7 +889,7 @@ body {
   background: #fff;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -975,6 +995,7 @@ body {
   background: transparent;
   cursor: pointer;
 }
+
 .search-suggestions {
   margin-top: 10px;
   list-style: none;
@@ -998,7 +1019,7 @@ body {
 .suggestion-item:hover {
   background: #f1f1f1;
 }
- 
+
 /*Login*/
 
 .login-page {

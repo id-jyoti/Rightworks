@@ -1,11 +1,7 @@
 export const setting=z1=>o2_2=>o2_1=>o2=>{
   const settings=       {};
 
-  const ignores=        [
-    `10/**/*`,
-    `⋆/**/*`,
-    `∤/**/*`,
-  ];
+  const ignores=        [];
 
   const languageOptions={
     sourceType:   `module`,
@@ -129,7 +125,6 @@ export const az=     o2_=>{
     ... Stylistic.rule,
     ... Perfectionist.rule,
     ... Jsx_a11y.rule,
-    ... Common.rule,
     ... Javascript.rule_over,
     ... Javascript.rule,
   };
@@ -170,11 +165,11 @@ const rule_active=  i2=>o2=>{
   }
 };
 
-const Typescript=   await import (`./eslint/config/plugin/typescript.tsx`);
-const Stylistic=    await import (`./eslint/config/plugin/stylistic.tsx`);
-const Perfectionist=await import (`./eslint/config/plugin/perfectionist.tsx`);
-const Jsx_a11y=     await import (`./eslint/config/plugin/jsx-a11y.tsx`);
-const Javascript=   await import (`./eslint/config/plugin/javascript.tsx`);
-const Plugin=       await import (`./eslint/config/plugin.tsx`);
-const Parser=       await import (`./eslint/config/parser.tsx`);
+const Typescript=   await import (`./eslint/plugin/typescript.tsx`);
+const Stylistic=    await import (`./eslint/plugin/stylistic.tsx`);
+const Perfectionist=await import (`./eslint/plugin/perfectionist.tsx`);
+const Jsx_a11y=     await import (`./eslint/plugin/jsx-a11y.tsx`);
+const Javascript=   await import (`./eslint/plugin/javascript.tsx`);
+const Plugin=       await import (`./eslint/plugin.tsx`);
+const Parser=       await import (`./eslint/parser.tsx`);
 export default az (1);
