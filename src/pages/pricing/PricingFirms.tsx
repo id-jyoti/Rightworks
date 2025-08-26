@@ -91,7 +91,7 @@ const PricingFirms: React.FC = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Logos Section */}
         <div className="pricingfirms__logos">
           <p className="pricingfirms__logos-title">

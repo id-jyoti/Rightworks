@@ -18,11 +18,9 @@ export default [
       },
     },
     plugins: {
-      "@stylistic": Stylistic_eslint_plugin.default.rules,
+      "@stylistic": Stylistic_eslint_plugin.default,
     },
     rules: {
-      ...js.configs.recommended.rules,
-      ...reactHooks.configs.recommended.rules,
       "@stylistic/yield-star-spacing": [
         2,
       ],
