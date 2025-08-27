@@ -1,4 +1,3 @@
-import React from "react";
 import "./SmartVault.css";
 const SmartVault = ()=>{
   return (

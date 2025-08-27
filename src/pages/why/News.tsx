@@ -1,155 +1,179 @@
-import React, { useState } from "react";
+import type React from "react";
+import {
+  useState,
+} from "react";
 import "./News.css";
-
-interface NewsItem {
-  id: number;
-  title: string;
-  category: string;
-  businessType: string;
-  description: string;
-}
-
-const News: React.FC = () => {
+const News: React.FC = ()=>{
   // Dummy News Data
-  const newsData: NewsItem[] = [
+  const newsData = [
     {
-      id: 1,
-      title: "Rightworks expands global partnerships",
-      category: "Partnerships",
-      businessType: "B2B",
-      description: "Rightworks strengthens its partner network worldwide."
+      title:       `Rightworks expands global partnerships`,
+      id:          1,
+      description: `Rightworks strengthens its partner network worldwide.`,
+      category:    `Partnerships`,
+      businessType:`B2B`,
     },
     {
-      id: 2,
-      title: "New AI-driven software launched",
-      category: "Software",
-      businessType: "Tech",
-      description: "Introducing advanced AI solutions for enterprises."
+      title:       `New AI-driven software launched`,
+      id:          2,
+      description: `Introducing advanced AI solutions for enterprises.`,
+      category:    `Software`,
+      businessType:`Tech`,
     },
     {
-      id: 3,
-      title: "Rightworks at Global Tech Conference 2025",
-      category: "Events",
-      businessType: "Enterprise",
-      description: "Showcasing innovations at the global stage."
+      title:       `Rightworks at Global Tech Conference 2025`,
+      id:          3,
+      description: `Showcasing innovations at the global stage.`,
+      category:    `Events`,
+      businessType:`Enterprise`,
     },
     {
-      id: 4,
-      title: "Meet the new leadership team",
-      category: "People",
-      businessType: "Corporate",
-      description: "Rightworks announces leadership changes."
-    }
+      title:       `Meet the new leadership team`,
+      id:          4,
+      description: `Rightworks announces leadership changes.`,
+      category:    `People`,
+      businessType:`Corporate`,
+    },
   ];
 
   // State for filters
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedBusinessType, setSelectedBusinessType] = useState("All");
+  const [
+    searchTerm,
+    setSearchTerm,
+  ] = useState (``);
+
+  const [
+    selectedCategory,
+    setSelectedCategory,
+  ] = useState (`All`);
+
+  const [
+    selectedBusinessType,
+    setSelectedBusinessType,
+  ] = useState (`All`);
 
   // Categories & Business Types Options
-  const categories = ["All", "Partnerships", "Software", "Events", "People"];
-  const businessTypes = ["All", "B2B", "Tech", "Enterprise", "Corporate"];
+  const categories = [
+    `All`,
+    `Partnerships`,
+    `Software`,
+    `Events`,
+    `People`,
+  ];
+
+  const businessTypes = [
+    `All`,
+    `B2B`,
+    `Tech`,
+    `Enterprise`,
+    `Corporate`,
+  ];
 
   // Filtering Logic
-  const filteredNews = newsData.filter((item) => {
+  const filteredNews = newsData.filter (item=>{
     const matchesSearch =
-      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.description.toLowerCase().includes(searchTerm.toLowerCase());
+      item.title.toLowerCase ().includes (searchTerm.toLowerCase ()) ||
+      item.description.toLowerCase ().includes (searchTerm.toLowerCase ());
 
     const matchesCategory =
-      selectedCategory === "All" || item.category === selectedCategory;
+      selectedCategory === `All` || item.category === selectedCategory;
 
     const matchesBusinessType =
-      selectedBusinessType === "All" ||
+      selectedBusinessType === `All` ||
       item.businessType === selectedBusinessType;
 
     return matchesSearch && matchesCategory && matchesBusinessType;
   });
 
   return (
-    <div className="news-page">
+    <div className={`news-page`}>
       {/* ---------- HERO SECTION ---------- */}
-      <section className="news-hero">
-        <div className="news-hero-content">
-          <h1>Rightworks newsroom</h1>
+      <section className={`news-hero`}>
+        <div className={`news-hero-content`}>
+          <h1>
+            {`Rightworks newsroom`}
+          </h1>
           <p>
-            Access the latest news on Rightworks: the company, people,
-            partnerships, events, software and more.
+            {`Access the latest news on Rightworks: the company, people,`}
+            {`partnerships, events, software and more.`}
           </p>
         </div>
       </section>
-
       {/* ---------- FILTERS SECTION ---------- */}
-      <section className="news-filters">
-        <div className="filter-container">
-          <input
-            type="text"
-            placeholder="Search ..."
-            className="search-input"
+      <section className={`news-filters`}>
+        <div className={`filter-container`}>
+          <input className={`search-input`}
+            placeholder={`Search ...`}
+            type={`text`}
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
+            onChange={e=>{
+              setSearchTerm (e.target.value);
+            }}
           />
-
-          <select
-            className="filter-dropdown"
+          <select className={`filter-dropdown`}
             value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
+            onChange={e=>{
+              setSelectedCategory (e.target.value);
+            }}
           >
-            {categories.map((cat, i) => (
+            {categories.map ((cat, i)=>(
               <option key={i} value={cat}>
                 {cat}
               </option>
             ))}
           </select>
-
-          <select
-            className="filter-dropdown"
+          <select className={`filter-dropdown`}
             value={selectedBusinessType}
-            onChange={(e) => setSelectedBusinessType(e.target.value)}
+            onChange={e=>{
+              setSelectedBusinessType (e.target.value);
+            }}
           >
-            {businessTypes.map((type, i) => (
+            {businessTypes.map ((type, i)=>(
               <option key={i} value={type}>
                 {type}
               </option>
             ))}
           </select>
-
-          <button
-            className="filter-btn"
-            onClick={() => {
-              setSearchTerm("");
-              setSelectedCategory("All");
-              setSelectedBusinessType("All");
+          <button className={`filter-btn`}
+            onClick={()=>{
+              setSearchTerm (``);
+              setSelectedCategory (`All`);
+              setSelectedBusinessType (`All`);
             }}
           >
-            RESET
+            {`RESET`}
           </button>
         </div>
       </section>
-
       {/* ---------- LATEST NEWS SECTION ---------- */}
-      <section className="latest-news">
-        <h2>Latest news</h2>
-
-        <div className="news-list">
-          {filteredNews.length > 0 ? (
-            filteredNews.map((news) => (
-              <div key={news.id} className="news-card">
-                <h3>{news.title}</h3>
-                <p className="news-meta">
-                  {news.category} • {news.businessType}
-                </p>
-                <p>{news.description}</p>
-              </div>
-            ))
-          ) : (
-            <p className="no-results">No news found.</p>
-          )}
+      <section className={`latest-news`}>
+        <h2>
+          {`Latest news`}
+        </h2>
+        <div className={`news-list`}>
+          {filteredNews.length > 0 ?
+              filteredNews.map (news=>(
+                <div key={news.id} className={`news-card`}>
+                  <h3>
+                    {news.title}
+                  </h3>
+                  <p className={`news-meta`}>
+                    {news.category}
+                    {` `}
+                    {`•`}
+                    {news.businessType}
+                  </p>
+                  <p>
+                    {news.description}
+                  </p>
+                </div>
+              )) :
+              <p className={`no-results`}>
+                {`No news found.`}
+              </p>}
         </div>
       </section>
     </div>
   );
 };
-
 export default News;

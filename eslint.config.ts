@@ -48,7 +48,6 @@ export const plugins=x1_=>{
   return {
     "perfectionist":     Plugin.perfectionist (``),
     "jsx-a11y":          Plugin.jsx_a11y (``),
-    "common":            Plugin.common (``),
     "@typescript-eslint":Plugin.typescript (``),
     "@stylistic":        Plugin.stylistic (``),
   };
@@ -126,7 +125,6 @@ export const az=     o2_=>{
     ... Stylistic.rule,
     ... Perfectionist.rule,
     ... Jsx_a11y.rule,
-    ... Common.rule,
     ... Javascript.rule_over,
     ... Javascript.rule,
   };
