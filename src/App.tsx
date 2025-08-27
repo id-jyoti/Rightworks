@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router, Routes, Route,
+} from "react-router-dom";
 import TopBar from "./components/TopBar";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -41,85 +43,78 @@ import CaseStudySutton from "./pages/CaseStudySutton";
 import SmartVault from "./pages/products/SmartVault";
 import Offers from "./pages/Partners/Offers";
 import Become from "./pages/Partners/Become";
-import Advocates from "./pages/Partners/Advocates"; // if needed
-import TransactionProAffiliate from "./pages/Partners/Affiliate"; // new import
-import Story from "./pages/About/Story";  // new import
-import Careers from "./pages/About/Careers"; // new import
-
+import Advocates from "./pages/Partners/Advocates";
+import TransactionProAffiliate from "./pages/Partners/Affiliate";
+import Story from "./pages/About/Story";
+import Careers from "./pages/About/Careers";
 // Pages
-import Home from "./pages/Home";          // create this if not exists
-import GetStarted from "./pages/GetStarted"; // from the code I gave earlier
-
-function App() {
+import Home from "./pages/Home";
+import GetStarted from "./pages/GetStarted";
+function App () {
   return (
-    <div className="min-h-screen bg-white text-xl font-semibold">
+    <div className={`min-h-screen bg-white text-xl font-semibold`}>
       <Router>
         {/* Topbar + Header always visible */}
-        <TopBar />
-        <Header />
-        <ScrollToTop />
+        <TopBar/>
+        <Header/>
+        <ScrollToTop/>
         {/* Page Content */}
         <main>
           <Routes>
-            <Route path="/support" element={<Support />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/scroll-to-top" element={<ScrollToTop />} />
-
-            // Products
-            <Route path="/products/cloud-premier" element={<CloudPremier />} />
-            <Route path="/products/cloud-hosting" element={<CloudHosting />} />
-            <Route path="/products/quickbooks-hosting" element={<QuickBooksHosting />} />
-            <Route path="/products/cloud-protect" element={<CloudProtect />} />
-            <Route path="/products/total-security" element={<TotalSecurity />} />
-            <Route path="/products/wisp-compliance" element={<WISPCompliance />} />
-            <Route path="/products/transaction-pro" element={<TransactionPro />} />
-            <Route path="/products/smartvault" element={<SmartVault />} />
-
-            // Solutions
-            <Route path="/solutions" element={<Solutions />} />
-            <Route path="/solutions/firms" element={<SolutionsFirms />} />
-            <Route path="/solutions/business" element={<SolutionsBusiness />} />
-
-            // Pricing
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/pricing/firms" element={<PricingFirms />} />
-            <Route path="/pricing/business" element={<PricingBusiness />} />
-            <Route path="/pricing/transaction-pro" element={<PricingTransactionPro />} />
-            <Route path="/pricing/wisp" element={<PricingWisp />} />
-
-            // Resources
-            <Route path="/resources/hub" element={<ResourceHub />} />
-            <Route path="/resources/blog" element={<Blog />} />
-            <Route path="/resources/ebooks" element={<Ebooks />} />
-            <Route path="/resources/events" element={<Events />} />
-            <Route path="/resources/webinars" element={<Webinars />} />
-            <Route path="/resources/podcasts" element={<Podcasts />} />
-            <Route path="/resources/cybersecurity-ebook" element={<CyberEbook />} />
-
-            // Why Rightworks
-            <Route path="/why/built-for-pros" element={<BuiltForPros />} />
-            <Route path="/why/customers-love-us" element={<CustomersLoveUs />} />
-            <Route path="/why/app-integrations" element={<AppIntegrations />} />
-            <Route path="/why/leadership" element={<Leadership />} />
-            <Route path="/why/partners" element={<Partners />} />
-            <Route path="/why/news" element={<News />} />
-            <Route path="/why/reviews" element={<Reviews />} />
-            <Route path="/case-study/sutton-frost-cary" element={<CaseStudySutton />} />
-            <Route path="/reviews" element={<Reviews />} />   {/* new route */}
-            <Route path="/get-started" element={<GetStarted />} />
-
-           //Partners
-           <Route path="/partners/offers" element={<Offers />} />
-            <Route path="/partners/become" element={<Become />} />
-            <Route path="/partners/advocates" element={<Advocates />} />
-            <Route path="/partners/affiliate" element={<TransactionProAffiliate />} />
-
-            // About
-            <Route path="/about/story" element={<Story />} />
-            <Route path="/about/careers" element={<Careers />} />
+            <Route element={<Support/>} path={`/support`}/>
+            <Route element={<Contact/>} path={`/contact`}/>
+            <Route element={<Login/>} path={`/login`}/>
+            <Route element={<Search/>} path={`/search`}/>
+            <Route element={<Home/>} path={`/`}/>
+            <Route element={<ScrollToTop/>} path={`/scroll-to-top`}/>
+            {`// Products`}
+            <Route element={<CloudPremier/>} path={`/products/cloud-premier`}/>
+            <Route element={<CloudHosting/>} path={`/products/cloud-hosting`}/>
+            <Route element={<QuickBooksHosting/>} path={`/products/quickbooks-hosting`}/>
+            <Route element={<CloudProtect/>} path={`/products/cloud-protect`}/>
+            <Route element={<TotalSecurity/>} path={`/products/total-security`}/>
+            <Route element={<WISPCompliance/>} path={`/products/wisp-compliance`}/>
+            <Route element={<TransactionPro/>} path={`/products/transaction-pro`}/>
+            <Route element={<SmartVault/>} path={`/products/smartvault`}/>
+            {`// Solutions`}
+            <Route element={<Solutions/>} path={`/solutions`}/>
+            <Route element={<SolutionsFirms/>} path={`/solutions/firms`}/>
+            <Route element={<SolutionsBusiness/>} path={`/solutions/business`}/>
+            {`// Pricing`}
+            <Route element={<Pricing/>} path={`/pricing`}/>
+            <Route element={<PricingFirms/>} path={`/pricing/firms`}/>
+            <Route element={<PricingBusiness/>} path={`/pricing/business`}/>
+            <Route element={<PricingTransactionPro/>} path={`/pricing/transaction-pro`}/>
+            <Route element={<PricingWisp/>} path={`/pricing/wisp`}/>
+            {`// Resources`}
+            <Route element={<ResourceHub/>} path={`/resources/hub`}/>
+            <Route element={<Blog/>} path={`/resources/blog`}/>
+            <Route element={<Ebooks/>} path={`/resources/ebooks`}/>
+            <Route element={<Events/>} path={`/resources/events`}/>
+            <Route element={<Webinars/>} path={`/resources/webinars`}/>
+            <Route element={<Podcasts/>} path={`/resources/podcasts`}/>
+            <Route element={<CyberEbook/>} path={`/resources/cybersecurity-ebook`}/>
+            {`// Why Rightworks`}
+            <Route element={<BuiltForPros/>} path={`/why/built-for-pros`}/>
+            <Route element={<CustomersLoveUs/>} path={`/why/customers-love-us`}/>
+            <Route element={<AppIntegrations/>} path={`/why/app-integrations`}/>
+            <Route element={<Leadership/>} path={`/why/leadership`}/>
+            <Route element={<Partners/>} path={`/why/partners`}/>
+            <Route element={<News/>} path={`/why/news`}/>
+            <Route element={<Reviews/>} path={`/why/reviews`}/>
+            <Route element={<CaseStudySutton/>} path={`/case-study/sutton-frost-cary`}/>
+            <Route element={<Reviews/>} path={`/reviews`}/>
+            {` `}
+            {/* new route */}
+            <Route element={<GetStarted/>} path={`/get-started`}/>
+            {`//Partners`}
+            <Route element={<Offers/>} path={`/partners/offers`}/>
+            <Route element={<Become/>} path={`/partners/become`}/>
+            <Route element={<Advocates/>} path={`/partners/advocates`}/>
+            <Route element={<TransactionProAffiliate/>} path={`/partners/affiliate`}/>
+            {`// About`}
+            <Route element={<Story/>} path={`/about/story`}/>
+            <Route element={<Careers/>} path={`/about/careers`}/>
 
           </Routes>
         </main>
@@ -128,5 +123,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

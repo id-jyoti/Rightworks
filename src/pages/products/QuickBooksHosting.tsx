@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import "./QuickBooksHosting.css"; 
+import "./QuickBooksHosting.css";
 
-type Faq = { question: string; answer: string };
+type Faq = {
+  question: string;
+  answer: string;
+};
 
 const faqs: Faq[] = [
   {
@@ -204,7 +207,7 @@ const QuickBooksHosting: React.FC = () => {
           See how QuickBooks works in Rightworks Cloud Hosting
         </h2>
         <p className="demo-description">
-          Explore how Rightworks Cloud Hosting makes it easy to get secure, remote access 
+          Explore how Rightworks Cloud Hosting makes it easy to get secure, remote access
           to QuickBooks and all your critical accounting, tax and business apps.
         </p>
 

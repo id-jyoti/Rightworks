@@ -19,7 +19,7 @@ const fuse = new Fuse(siteData, {
   threshold: 0.3, // lower = stricter matches
 });
 
-const Search: React.FC = () => {
+const Search = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<{ title: string; url: string }[]>([]);
 

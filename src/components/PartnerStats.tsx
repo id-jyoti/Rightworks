@@ -1,79 +1,109 @@
 // src/components/PartnerStats.tsx
-import React, { useState, useEffect } from "react";
-import thomson from "../assets/A.svg"; 
+import React, {
+  useState, useEffect,
+} from "react";
+import thomson from "../assets/A.svg";
 import wolters from "../assets/B.svg";
 import cch from "../assets/C.svg";
 import microsoft from "../assets/D.svg";
 import quickbooks from "../assets/E.svg";
 import xero from "../assets/F.svg";
 import bill from "../assets/G.svg";
+const PartnersStats = ()=>{
+  const [
+    revenueBoost,
+    setRevenueBoost,
+  ] = useState (40);
 
-const PartnersStats: React.FC = () => {
-  const [revenueBoost, setRevenueBoost] = useState(40);       // %
-  const [years, setYears] = useState(20);                     // years
-  const [firms, setFirms] = useState(10000);                  // firms
+  const [
+    years,
+    setYears,
+  ] = useState (20);
+
+  const [
+    firms,
+    setFirms,
+  ] = useState (10000);
 
   // Animate stats
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRevenueBoost((prev) =>
-        prev + (Math.random() > 0.5 ? 1 : -1) // wiggle up/down by 1
-      );
-      setYears((prev) =>
-        prev + (Math.random() > 0.8 ? 1 : 0) // occasionally increase
-      );
-      setFirms((prev) =>
-        prev + Math.floor(Math.random() * 5) // slowly grow
-      );
-    }, 4000); // every 4 seconds
+  useEffect (()=>{
+    const interval = setInterval (()=>{
+      setRevenueBoost (prev=>prev + (Math.random () > 0.5 ?
+        1 :
+          - 1));
+      setYears (prev=>prev + (Math.random () > 0.8 ?
+        1 :
+        0));
+      setFirms (prev=>prev + Math.floor (Math.random () * 5));
+    }, 4000);
 
-    return () => clearInterval(interval);
+    return ()=>clearInterval (interval);
   }, []);
 
   return (
-    <section className="partners-stats">
+    <section className={`partners-stats`}>
       {/* Partner Logos */}
-      <div className="partners">
-        <p className="partners-text">
-          Rightworks makes the apps you already use even better (and safer).
+      <div className={`partners`}>
+        <p className={`partners-text`}>
+          {`Rightworks makes the apps you already use even better (and safer).`}
         </p>
-        <div className="partners-logos">
-          <img src={thomson} alt="Thomson Reuters" />
-          <img src={wolters} alt="Wolters Kluwer" />
-          <img src={cch} alt="CCH Access" />
-          <img src={microsoft} alt="Microsoft" />
-          <img src={quickbooks} alt="QuickBooks" />
-          <img src={xero} alt="Xero" />
-          <img src={bill} alt="Bill" />
+        <div className={`partners-logos`}>
+          <img alt={`Thomson Reuters`} src={thomson}/>
+          <img alt={`Wolters Kluwer`} src={wolters}/>
+          <img alt={`CCH Access`} src={cch}/>
+          <img alt={`Microsoft`} src={microsoft}/>
+          <img alt={`QuickBooks`} src={quickbooks}/>
+          <img alt={`Xero`} src={xero}/>
+          <img alt={`Bill`} src={bill}/>
         </div>
       </div>
-
       {/* Stats Row */}
-      <div className="stats">
-        <div className="stat-item">
-          <h3>{revenueBoost}%</h3>
+      <div className={`stats`}>
+        <div className={`stat-item`}>
+          <h3>
+            {revenueBoost}
+            {`%`}
+          </h3>
           <p>
-            The right tech can boost revenue <br /> per employee by almost {revenueBoost}%
+            {`The right tech can boost revenue `}
+            <br/>
+            {` `}
+            {`per employee by almost`}
+            {revenueBoost}
+            {`%`}
           </p>
         </div>
-        <div className="stat-divider"></div>
-        <div className="stat-item">
-          <h3>{years}+ years</h3>
+        <div className={`stat-divider`}/>
+        <div className={`stat-item`}>
+          <h3>
+            {years}
+            {`+ years`}
+          </h3>
           <p>
-            We’ve been helping accounting <br /> firms succeed for over {years}+ years
+            {`We’ve been helping accounting `}
+            <br/>
+            {` `}
+            {`firms succeed for over`}
+            {years}
+            {`+ years`}
           </p>
         </div>
-        <div className="stat-divider"></div>
-        <div className="stat-item">
-          <h3>{firms.toLocaleString()}+ firms</h3>
+        <div className={`stat-divider`}/>
+        <div className={`stat-item`}>
+          <h3>
+            {firms.toLocaleString ()}
+            {`+ firms`}
+          </h3>
           <p>
-            Join the many firms who trust <br /> Rightworks to supercharge their
-            business
+            {`Join the many firms who trust `}
+            <br/>
+            {` `}
+            {`Rightworks to supercharge their`}
+            {`business`}
           </p>
         </div>
       </div>
     </section>
   );
 };
-
 export default PartnersStats;
