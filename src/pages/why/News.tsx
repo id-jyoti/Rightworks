@@ -102,7 +102,7 @@ const News: React.FC = ()=>{
       {/* ---------- FILTERS SECTION ---------- */}
       <section className={`news-filters`}>
         <div className={`filter-container`}>
-          <input className={`search-input`}
+          <input aria-label={`filter`} className={`search-input`}
             placeholder={`Search ...`}
             type={`text`}
             value={searchTerm}
