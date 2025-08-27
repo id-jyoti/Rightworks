@@ -472,10 +472,7 @@ export const rule=     {
     2,
   ],
   "@typescript-eslint/max-params": [
-    2,
-    {
-      max: 1,
-    },
+    0,
   ],
   "@typescript-eslint/explicit-module-boundary-types": [
     0,

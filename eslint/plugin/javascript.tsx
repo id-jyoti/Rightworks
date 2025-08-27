@@ -267,7 +267,7 @@ export const rule=     {
     2,
   ],
   "no-ternary": [
-    2,
+    0,
   ],
   "no-template-curly-in-string": [
     2,
