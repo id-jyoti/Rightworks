@@ -1,6 +1,5 @@
 export const setting=z1=>o2_2=>o2_1=>o2=>{
   const settings=       {};
-
   const ignores=        [];
 
   const languageOptions={
@@ -39,7 +38,8 @@ export const setting=z1=>o2_2=>o2_1=>o2=>{
       files:          [
         `**/*.tsx`,
         `**/*.ts`,
-        `**/*.mjs`,
+        `**/*.jsx`,
+        `**/*.js`,
       ],
     },
   ];
@@ -48,6 +48,7 @@ export const plugins=x1_=>{
   return {
     "perfectionist":     Plugin.perfectionist (``),
     "jsx-a11y":          Plugin.jsx_a11y (``),
+    "common":            Plugin.common (``),
     "@typescript-eslint":Plugin.typescript (``),
     "@stylistic":        Plugin.stylistic (``),
   };
@@ -94,7 +95,7 @@ export const detect= o2_1=>o2=>{
 export const az=     o2_=>{
   const use= {
     warnOnUnsupportedTypeScriptVersion:true,
-    tsconfigRootDir:                   `./`,
+    tsconfigRootDir:                   Path.resolve (dirname),
     sourceType:                        `module`,
     requireConfigFile:                 false,
     projectFolderIgnoreList:           [],
@@ -125,6 +126,7 @@ export const az=     o2_=>{
     ... Stylistic.rule,
     ... Perfectionist.rule,
     ... Jsx_a11y.rule,
+    ... Common.rule,
     ... Javascript.rule_over,
     ... Javascript.rule,
   };
@@ -165,11 +167,15 @@ const rule_active=  i2=>o2=>{
   }
 };
 
-const Typescript=   await import (`./eslint/plugin/typescript.tsx`);
-const Stylistic=    await import (`./eslint/plugin/stylistic.tsx`);
-const Perfectionist=await import (`./eslint/plugin/perfectionist.tsx`);
-const Jsx_a11y=     await import (`./eslint/plugin/jsx-a11y.tsx`);
-const Javascript=   await import (`./eslint/plugin/javascript.tsx`);
-const Plugin=       await import (`./eslint/plugin.tsx`);
-const Parser=       await import (`./eslint/parser.tsx`);
+const Url=          await import (`node:url`);
+const Path=         await import (`node:path`);
+const Typescript=   await import (`./eslint/plugin/typescript`);
+const Stylistic=    await import (`./eslint/plugin/stylistic`);
+const Perfectionist=await import (`./eslint/plugin/perfectionist`);
+const Jsx_a11y=     await import (`./eslint/plugin/jsx-a11y`);
+const Javascript=   await import (`./eslint/plugin/javascript`);
+const Plugin=       await import (`./eslint/plugin`);
+const Parser=       await import (`./eslint/parser`);
+const filename=     Url.fileURLToPath (import.meta.url);
+const dirname=      Path.dirname (filename);
 export default az (1);

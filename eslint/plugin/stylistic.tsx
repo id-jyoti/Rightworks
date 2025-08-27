@@ -332,7 +332,7 @@ export const rule={
     `never`,
   ],
   "@stylistic/multiline-ternary": [
-    2,
+    0,
   ],
   "@stylistic/multiline-comment-style": [
     2,

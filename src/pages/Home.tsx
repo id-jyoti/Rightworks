@@ -1,5 +1,5 @@
 import React from "react";
-import g2Logo from "../assets/g2.svg"; // adjust path if needed
+import g2Logo from "../assets/g2.svg";
 import Features from "../components/Feature";
 import CaseStudy from "../components/CaseStudy";
 import PartnersStats from "../components/PartnerStats";
