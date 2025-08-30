@@ -1,4 +1,4 @@
-import React, {
+import {
   useState,
 } from "react";
 import "./PricingTransactionPro.css";
@@ -43,10 +43,12 @@ const PricingTransactionPro = ()=>{
         ].map (
           tab=>(
             <button key={tab}
-              onClick={()=>setActiveTab (tab)}
               className={`pricing-tab ${activeTab === tab ?
                 `active` :
                 ``}`}
+              onClick={()=>{
+                setActiveTab (tab);
+              }}
             >
               {tab}
             </button>

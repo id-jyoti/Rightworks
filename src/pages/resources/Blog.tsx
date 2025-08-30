@@ -1,4 +1,3 @@
-import React from "react";
 import "./Blog.css";
 const Blog = ()=>{
   return (
@@ -68,7 +67,7 @@ const Blog = ()=>{
               <span>
                 {`Yes, I would like to sign up to receive email from Rightworks.`}
                 {` `}
-                <a href={`#`}>
+                <a href={`/#`}>
                   {`See Privacy Policy`}
                 </a>
               </span>

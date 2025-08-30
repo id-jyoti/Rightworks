@@ -1,4 +1,3 @@
-import React from "react";
 import "./PricingBusiness.css";
 const PricingBusiness = ()=>{
   return (

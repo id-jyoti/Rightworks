@@ -1,4 +1,3 @@
-import React from "react";
 import "./PricingWISP.css";
 const PricingWISP = ()=>{
   return (
