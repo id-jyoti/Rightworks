@@ -1,4 +1,3 @@
-import React from "react";
 import "./Affiliate.css";
 const Affiliate = ()=>{
   return (

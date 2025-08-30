@@ -1,4 +1,3 @@
-import React from "react";
 import "./Advocates.css";
 const Advocates = ()=>{
   return (
@@ -39,7 +38,7 @@ const Advocates = ()=>{
             </h4>
             <p>
               {`Create your PartnerStack account `}
-              <a href={`#`}>
+              <a href={`/#`}>
                 {`here`}
               </a>
               {` `}

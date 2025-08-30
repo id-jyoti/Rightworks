@@ -1,4 +1,3 @@
-import React from "react";
 import "./CloudPremier.css";
 const CloudPremier = ()=>{
   const revenueBoost = 40;
@@ -22,12 +21,12 @@ const CloudPremier = ()=>{
             {`Cloud Hosting lets you host your desktop accounting and business apps in the cloud, so your team can work easily, securely, and productively from anywhere.`}
           </p>
           <div className={`cta-buttons`}>
-            <a className={`btn-primary`} href={`#`}>
+            <a className={`btn-primary`} href={`/#`}>
               {` `}
               {`BUSINESS PLANS`}
               {` `}
             </a>
-            <a className={`btn-outline`} href={`#`}>
+            <a className={`btn-outline`} href={`/#`}>
               {` `}
               {`FIRM PLANS`}
               {` `}
@@ -55,7 +54,7 @@ const CloudPremier = ()=>{
         </div>
         <div className={`trusted-btn`}>
           <a className={`btn-outline`}
-            href={``}
+            href={`/#`}
             rel={`noopener noreferrer`}
             target={`_blank`}
           >
@@ -176,7 +175,7 @@ const CloudPremier = ()=>{
             <li>
               {`Watch how Cloud Hosting keeps your apps safe, simplifies access, and supports your team.`}
             </li>
-            <a className={`video-link`} href={`#`}>
+            <a className={`video-link`} href={`/#`}>
               {`Watch the video →`}
             </a>
           </ul>
@@ -246,10 +245,10 @@ const CloudPremier = ()=>{
           {`Host your desktop apps in the cloud and work smarter, safer, and faster.`}
         </h2>
         <div className={`cta-buttons`}>
-          <a className={`cta-btn primary`} href={`#`}>
+          <a className={`cta-btn primary`} href={`/#`}>
             {`GET CLOUD HOSTING →`}
           </a>
-          <a className={`cta-btn secondary`} href={`#`}>
+          <a className={`cta-btn secondary`} href={`/#`}>
             {`VIEW PLANS →`}
           </a>
         </div>

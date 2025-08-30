@@ -1,6 +1,5 @@
-import React from "react";
 import "./CloudPremier.css";
-const CloudPremie = ()=>{
+const CloudPremier = ()=>{
   const revenueBoost = 40;
   const years = 20;
   const firms = 10000;
@@ -27,10 +26,10 @@ const CloudPremie = ()=>{
             {`you can work smarter and build a more modern firm.`}
           </p>
           <div className={`cta-buttons`}>
-            <a className={`btn-primary`} href={`#`}>
+            <a className={`btn-primary`} href={`/#`}>
               {`View Plans →`}
             </a>
-            <a className={`btn-outline`} href={`#`}>
+            <a className={`btn-outline`} href={`/#`}>
               {`Get Cloud Premier →`}
             </a>
           </div>
@@ -55,7 +54,7 @@ const CloudPremie = ()=>{
         </div>
         <div className={`trusted-btn`}>
           <a className={`btn-outline`}
-            href={``}
+            href={`/#`}
             rel={`noopener noreferrer`}
             target={`_blank`}
           >
@@ -235,7 +234,7 @@ const CloudPremie = ()=>{
         <h2>
           {`Work smarter, grow faster, and make life easier with Cloud Premier.`}
         </h2>
-        <a className={`cta-btn`} href={`#`}>
+        <a className={`cta-btn`} href={`/#`}>
           {`GET CLOUD PREMIER →`}
         </a>
       </section>

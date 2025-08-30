@@ -1,4 +1,3 @@
-import React from "react";
 import "./Become.css";
 import {
   Phone, Calendar,
@@ -41,8 +40,8 @@ const Become = ()=>{
           </p>
           <form>
             <div className={`form-row`}>
-              <input placeholder={`First name*`} type={`text`} required/>
-              <input placeholder={`Last name*`} type={`text`} required/>
+              <input aria-label={`First name`} placeholder={`First name*`} type={`text`} required/>
+              <input aria-label={`First name`} placeholder={`Last name*`} type={`text`} required/>
             </div>
             <div className={`form-row`}>
               <input placeholder={`Business name*`} type={`text`} required/>
