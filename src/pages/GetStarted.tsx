@@ -1,10 +1,9 @@
-import React from "react";
-import award1 from "../assets/2.webp";
-import award2 from "../assets/4.webp";
-import award3 from "../assets/5.webp";
 import {
-  FaBuilding, FaBriefcase, FaPhoneAlt,
+  FaPhoneAlt, FaBuilding, FaBriefcase,
 } from "react-icons/fa";
+import award3 from "../assets/5.webp";
+import award2 from "../assets/4.webp";
+import award1 from "../assets/2.webp";
 const GetStarted = ()=>{
   return (
     <div className={`getstarted-section`}>
@@ -59,14 +58,14 @@ const GetStarted = ()=>{
           </p>
           <form>
             <div className={`form-row`}>
-              <input placeholder={`First name*`} type={`text`} required/>
-              <input placeholder={`Last name*`} type={`text`} required/>
+              <input aria-label={`first-name`} placeholder={`First name*`} type={`text`} required/>
+              <input aria-label={`last-name`} placeholder={`Last name*`} type={`text`} required/>
             </div>
             <div className={`form-row`}>
-              <input placeholder={`Email*`} type={`email`} required/>
-              <input placeholder={`Phone*`} type={`tel`}/>
+              <input aria-label={`email`} placeholder={`Email*`} type={`email`} required/>
+              <input aria-label={`phone`} placeholder={`Phone*`} type={`tel`}/>
             </div>
-            <input placeholder={`Company*`} type={`text`} required/>
+            <input aria-label={`company`} placeholder={`Company*`} type={`text`} required/>
             <div className={`form-row`}>
               <select>
                 <option>
@@ -103,7 +102,7 @@ const GetStarted = ()=>{
               </option>
             </select>
             <div className={`checkbox-row`}>
-              <input type={`checkbox`}/>
+              <input aria-label={`checkbox`} type={`checkbox`}/>
               <label>
                 {` `}
                 {`Sign me up to receive news, product updates and event invites`}

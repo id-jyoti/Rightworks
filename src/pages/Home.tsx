@@ -1,9 +1,8 @@
-import React from "react";
-import g2Logo from "../assets/g2.svg";
+import PartnersStats from "../components/PartnerStats";
 import Features from "../components/Feature";
 import CaseStudy from "../components/CaseStudy";
-import PartnersStats from "../components/PartnerStats";
 import Awards from "../components/Awards";
+import g2Logo from "../assets/g2.svg";
 const Home = ()=>{
   return (
     <main className={`home`}>

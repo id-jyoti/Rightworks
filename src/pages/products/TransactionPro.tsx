@@ -1,4 +1,3 @@
-import React from "react";
 import "./TransactionPro.css";
 const TransactionPro = ()=>{
   return (
@@ -22,10 +21,10 @@ const TransactionPro = ()=>{
             {`time and ensuring data accuracy.`}
           </p>
           <div className={`transactionpro-buttons`}>
-            <a className={`tp-btn-primary`} href={`#`}>
+            <a className={`tp-btn-primary`} href={`/#`}>
               {`TRY FOR FREE →`}
             </a>
-            <a className={`tp-btn-secondary`} href={`#`}>
+            <a className={`tp-btn-secondary`} href={`/#`}>
               {`BUY NOW →`}
             </a>
           </div>

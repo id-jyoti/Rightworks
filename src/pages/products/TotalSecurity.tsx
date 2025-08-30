@@ -1,4 +1,3 @@
-import React from "react";
 import "./TotalSecurity.css";
 const TotalSecurity = ()=>{
   return (

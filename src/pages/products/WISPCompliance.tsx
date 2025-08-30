@@ -1,4 +1,3 @@
-import React from "react";
 import "./WISPCompliance.css";
 const WISPCompliance = ()=>{
   return (
