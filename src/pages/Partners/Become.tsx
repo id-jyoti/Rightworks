@@ -44,11 +44,11 @@ const Become = ()=>{
               <input aria-label={`First name`} placeholder={`Last name*`} type={`text`} required/>
             </div>
             <div className={`form-row`}>
-              <input placeholder={`Business name*`} type={`text`} required/>
-              <input placeholder={`Email*`} type={`email`} required/>
+              <input aria-label={`Business name`} placeholder={`Business name*`} type={`text`} required/>
+              <input aria-label={`Email`} placeholder={`Email*`} type={`email`} required/>
             </div>
             <div className={`form-row`}>
-              <input placeholder={`Phone*`} type={`tel`} required/>
+              <input aria-label={`Phone`} placeholder={`Phone*`} type={`tel`} required/>
             </div>
             <button className={`submit-btn`} type={`submit`}>
               {`SUBMIT →`}
