@@ -1,4 +1,3 @@
-import React from "react";
 import "./Reviews.css";
 const Reviews = ()=>{
   return (
@@ -55,7 +54,7 @@ const Reviews = ()=>{
             <p>
               {`"Easy for multiple users to access the corporate Quickbooks Pro."`}
             </p>
-            <a href={`#`}>
+            <a href={`/#`}>
               {`Read the full Rightworks Cloud Hosting review`}
             </a>
             <p className={`author`}>
@@ -82,7 +81,7 @@ const Reviews = ()=>{
             <p>
               {`"1. Very simple to log in and launch applications 2. Great customer support"`}
             </p>
-            <a href={`#`}>
+            <a href={`/#`}>
               {`Read the full Rightworks Cloud Hosting review`}
             </a>
             <p className={`author`}>

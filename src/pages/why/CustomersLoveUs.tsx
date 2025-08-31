@@ -1,4 +1,3 @@
-import React from "react";
 import "./CustomersLoveUs.css";
 const CustomersLoveUs = ()=>{
   return (

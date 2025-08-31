@@ -1,4 +1,3 @@
-import React from "react";
 import "./CyberEbook.css";
 const CyberEbook = ()=>{
   return (
@@ -25,13 +24,13 @@ const CyberEbook = ()=>{
             <p>
               {`SHARE`}
             </p>
-            <a href={`#`}>
+            <a href={`/#`}>
               {`f`}
             </a>
-            <a href={`#`}>
+            <a href={`/#`}>
               {`X`}
             </a>
-            <a href={`#`}>
+            <a href={`/#`}>
               {`in`}
             </a>
           </div>
@@ -79,12 +78,12 @@ const CyberEbook = ()=>{
           </p>
           <form>
             <div className={`form-row`}>
-              <input placeholder={`First name*`} type={`text`} required/>
-              <input placeholder={`Last name*`} type={`text`} required/>
+              <input aria-label={`First name`} placeholder={`First name*`} type={`text`} required/>
+              <input aria-label={`First name`} placeholder={`Last name*`} type={`text`} required/>
             </div>
             <div className={`form-row`}>
-              <input placeholder={`Email*`} type={`email`} required/>
-              <input placeholder={`Phone*`} type={`tel`} required/>
+              <input aria-label={`Email`} placeholder={`Email*`} type={`email`} required/>
+              <input aria-label={`Phone`} placeholder={`Phone*`} type={`tel`} required/>
             </div>
             <div className={`form-row`}>
               <select required>
@@ -98,7 +97,7 @@ const CyberEbook = ()=>{
                   {`Other`}
                 </option>
               </select>
-              <input placeholder={`Company*`} type={`text`} required/>
+              <input aria-label={`Company`} placeholder={`Company*`} type={`text`} required/>
             </div>
             <div className={`form-row`}>
               <select required>
@@ -117,7 +116,7 @@ const CyberEbook = ()=>{
               </select>
             </div>
             <div className={`consent`}>
-              <input id={`consent`} type={`checkbox`}/>
+              <input aria-label={`consent`} id={`consent`} type={`checkbox`}/>
               <label htmlFor={`consent`}>
                 {`Sign me up to receive news, product updates and event invites`}
                 {`from `}
@@ -126,7 +125,7 @@ const CyberEbook = ()=>{
                 </strong>
                 {`. See`}
                 {` `}
-                <a href={`#`}>
+                <a href={`/#`}>
                   {`Privacy Policy`}
                 </a>
                 {`.`}

@@ -58,12 +58,13 @@ const Blog = ()=>{
             <p>
               {`Get Rightworks articles delivered straight to your inbox.`}
             </p>
-            <input className={`subscribe-input`}
+            <input aria-label={`Email address`}
+              className={`subscribe-input`}
               placeholder={`Email`}
               type={`email`}
             />
             <label className={`subscribe-checkbox`}>
-              <input type={`checkbox`}/>
+              <input aria-label={`Consent to receive emails`} type={`checkbox`}/>
               <span>
                 {`Yes, I would like to sign up to receive email from Rightworks.`}
                 {` `}

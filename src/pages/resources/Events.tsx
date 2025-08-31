@@ -1,4 +1,3 @@
-import React from "react";
 import "./Events.css";
 const Events = ()=>{
   return (
@@ -20,7 +19,7 @@ const Events = ()=>{
       <section className={`events-filter`}>
         {/* Search */}
         <div className={`search-wrapper`}>
-          <input className={`search-input`}
+          <input aria-label={`search-input`} className={`search-input`}
             placeholder={`Search ...`}
             type={`text`}
           />
@@ -61,8 +60,8 @@ const Events = ()=>{
         </div>
         {/* Date Range */}
         <div className={`date-wrapper`}>
-          <input className={`date-input`} placeholder={`Date from`} type={`date`}/>
-          <input className={`date-input`} placeholder={`Date until`} type={`date`}/>
+          <input aria-label={`date-input`} className={`date-input`} placeholder={`Date from`} type={`date`}/>
+          <input aria-label={`date-input`} className={`date-input`} placeholder={`Date until`} type={`date`}/>
         </div>
         {/* Filter Button */}
         <button className={`filter-btn`}>

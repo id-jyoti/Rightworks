@@ -1,4 +1,3 @@
-import React from "react";
 import "./Leadership.css";
 const Leadership = ()=>{
   return (
@@ -25,43 +24,43 @@ const Leadership = ()=>{
         <div className={`team-grid`}>
           {[
             {
-              name:`Joel Hughes`,
               role:`Executive Chairman`,
+              name:`Joel Hughes`,
               img: `/assets/L1.webp`,
             },
             {
-              name:`Ian Williams`,
               role:`Chief Executive Officer`,
+              name:`Ian Williams`,
               img: `/assets/L2.webp`,
             },
             {
-              name:`Michael Bird`,
               role:`President`,
+              name:`Michael Bird`,
               img: `/assets/L3.webp`,
             },
             {
-              name:`Jay Muelhoefer`,
               role:`Chief Revenue Officer`,
+              name:`Jay Muelhoefer`,
               img: `/assets/L4.webp`,
             },
             {
-              name:`Adam Collicelli`,
               role:`General Counsel`,
+              name:`Adam Collicelli`,
               img: `/assets/L5.webp`,
             },
             {
-              name:`Dana Abraham`,
               role:`Chief Human Resources Officer`,
+              name:`Dana Abraham`,
               img: `/assets/L6.webp`,
             },
             {
-              name:`Tom LeSaffre`,
               role:`Vice President of Strategy`,
+              name:`Tom LeSaffre`,
               img: `/assets/L7.webp`,
             },
             {
-              name:`Jenny Buchholz`,
               role:`Chief Financial Officer`,
+              name:`Jenny Buchholz`,
               img: `/assets/L8.webp`,
             },
           ].map ((member, index)=>(
@@ -88,23 +87,23 @@ const Leadership = ()=>{
         <div className={`team-grid`}>
           {[
             {
-              name:`Jim Walsh`,
               role:`Chief Information Officer`,
+              name:`Jim Walsh`,
               img: `/assets/L9.webp`,
             },
             {
-              name:`Gary Engel`,
               role:`Chief Customer Care Officer`,
+              name:`Gary Engel`,
               img: `/assets/L10.webp`,
             },
             {
-              name:`Jon Lupa`,
               role:`Chief Technology Officer`,
+              name:`Jon Lupa`,
               img: `/assets/L11.webp`,
             },
             {
-              name:`Meg Norberg`,
               role:`Vice President, EPM`,
+              name:`Meg Norberg`,
               img: `/assets/L12.webp`,
             },
           ].map ((member, index)=>(

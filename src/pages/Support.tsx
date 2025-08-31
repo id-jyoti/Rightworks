@@ -1,49 +1,48 @@
-import React from "react";
 import {
-  Cloud, FileText, Shield, Link, Users, Server,
+  Users, Shield, Server, Link, FileText, Cloud,
 } from "lucide-react";
 const supportItems = [
   {
-    icon: <Cloud className={`support-icon`} size={40}/>,
     title:`Cloud Hosting and QuickBooks`,
-    desc: `Formerly Right Networks Hosted QuickBooks`,
     phone:`866-691-4277 ext. 2`,
-  },
-  {
-    icon: <FileText className={`support-icon`} size={40}/>,
-    title:`Transaction Pro`,
-    desc: `Easily manage data transfers between QuickBooks and Excel`,
-    phone:`888-297-6172`,
-  },
-  {
     icon: <Cloud className={`support-icon`} size={40}/>,
+    desc: `Formerly Right Networks Hosted QuickBooks`,
+  },
+  {
+    title:`Transaction Pro`,
+    phone:`888-297-6172`,
+    icon: <FileText className={`support-icon`} size={40}/>,
+    desc: `Easily manage data transfers between QuickBooks and Excel`,
+  },
+  {
     title:`Cloud Premier`,
-    desc: `Formerly Firm Premier and Xcentric`,
     phone:`866-923-6874`,
+    icon: <Cloud className={`support-icon`} size={40}/>,
+    desc: `Formerly Firm Premier and Xcentric`,
   },
   {
-    icon: <Shield className={`support-icon`} size={40}/>,
     title:`Cloud Protect`,
-    desc: `Also known as Practice Protect`,
     phone:`415-992-8245`,
+    icon: <Shield className={`support-icon`} size={40}/>,
+    desc: `Also known as Practice Protect`,
   },
   {
-    icon: <Link className={`support-icon`} size={40}/>,
     title:`Connect`,
-    desc: `Client engagement and business performance tools`,
     phone:`866-691-4277 ext. 2`,
+    icon: <Link className={`support-icon`} size={40}/>,
+    desc: `Client engagement and business performance tools`,
   },
   {
-    icon: <Server className={`support-icon`} size={40}/>,
     title:`Managed Microsoft and Total Security`,
-    desc: `Formerly known as Secure Workstation. Extend the protection of the OneSpace platform to your devices, network and employees`,
     phone:`888-245-0780`,
+    icon: <Server className={`support-icon`} size={40}/>,
+    desc: `Formerly known as Secure Workstation. Extend the protection of the OneSpace platform to your devices, network and employees`,
   },
   {
-    icon: <Users className={`support-icon`} size={40}/>,
     title:`Community`,
-    desc: `Connect with peers. Learn from experts. Elevate your firm.`,
     phone:``,
+    icon: <Users className={`support-icon`} size={40}/>,
+    desc: `Connect with peers. Learn from experts. Elevate your firm.`,
   },
 ];
 

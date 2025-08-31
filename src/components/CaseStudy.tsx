@@ -1,11 +1,9 @@
-// src/components/CaseStudy.tsx
-import React from "react";
-import {
-  Play,
-} from "lucide-react";
 import {
   useNavigate,
 } from "react-router-dom";
+import {
+  Play,
+} from "lucide-react";
 import caseImage from "../assets/image.webp";
 const CaseStudy = ()=>{
   const navigate = useNavigate ();

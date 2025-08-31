@@ -1,4 +1,3 @@
-import React from "react";
 import "./Podcasts.css";
 const Podcast = ()=>{
   return (
@@ -36,7 +35,7 @@ const Podcast = ()=>{
       </div>
       {/* Search + Filter Row */}
       <div className={`podcast-filters`}>
-        <input className={`podcast-search`} placeholder={`Search ...`} type={`text`}/>
+        <input aria-label={`podcast-search`} className={`podcast-search`} placeholder={`Search ...`} type={`text`}/>
         <select className={`podcast-select`}>
           <option>
             {`All Topics`}

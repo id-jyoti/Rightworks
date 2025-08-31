@@ -1,4 +1,3 @@
-import React from "react";
 import "./Ebooks.css";
 const Ebooks = ()=>{
   return (
@@ -22,7 +21,7 @@ const Ebooks = ()=>{
       {/* Search & Filter Section */}
       <section className={`ebooks-filter`}>
         <div className={`search-wrapper`}>
-          <input className={`search-input`}
+          <input aria-label={`search-input`} className={`search-input`}
             placeholder={`Search ...`}
             type={`text`}
           />

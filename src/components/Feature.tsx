@@ -1,9 +1,8 @@
-import React from "react";
 import {
   useNavigate,
 } from "react-router-dom";
 import {
-  Cloud, Server, Shield,
+  Shield, Server, Cloud,
 } from "lucide-react";
 const Features = ()=>{
   const navigate = useNavigate ();

@@ -1,14 +1,14 @@
 // src/components/PartnerStats.tsx
-import React, {
+import {
   useState, useEffect,
 } from "react";
-import thomson from "../assets/A.svg";
-import wolters from "../assets/B.svg";
-import cch from "../assets/C.svg";
-import microsoft from "../assets/D.svg";
-import quickbooks from "../assets/E.svg";
-import xero from "../assets/F.svg";
 import bill from "../assets/G.svg";
+import xero from "../assets/F.svg";
+import quickbooks from "../assets/E.svg";
+import microsoft from "../assets/D.svg";
+import cch from "../assets/C.svg";
+import wolters from "../assets/B.svg";
+import thomson from "../assets/A.svg";
 const PartnersStats = ()=>{
   const [
     revenueBoost,
@@ -37,7 +37,9 @@ const PartnersStats = ()=>{
       setFirms (prev=>prev + Math.floor (Math.random () * 5));
     }, 4000);
 
-    return ()=>clearInterval (interval);
+    return ()=>{
+      clearInterval (interval);
+    };
   }, []);
 
   return (

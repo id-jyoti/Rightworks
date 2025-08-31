@@ -1,13 +1,13 @@
+import {
+  Link,
+} from "react-router-dom";
+import {
+  FiSearch,
+} from "react-icons/fi";
 // src/components/Topbar.tsx
 import React, {
   useState, useEffect,
 } from "react";
-import {
-  FiSearch,
-} from "react-icons/fi";
-import {
-  Link,
-} from "react-router-dom";
 const TopBar = ()=>{
   const [
     salesNo,
@@ -19,7 +19,9 @@ const TopBar = ()=>{
       setSalesNo (prev=>prev + Math.floor (Math.random () * (10 + 1)));
     }, 3000);
 
-    return ()=>clearInterval (interval);
+    return ()=>{
+      clearInterval (interval);
+    };
   }, []);
 
   return (

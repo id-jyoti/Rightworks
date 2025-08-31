@@ -1,4 +1,3 @@
-import React from "react";
 import "./Webinars.css";
 const Webinars = ()=>{
   return (
@@ -13,7 +12,7 @@ const Webinars = ()=>{
       <section className={`webinars-filter`}>
         {/* Search */}
         <div className={`search-wrapper`}>
-          <input className={`search-input`}
+          <input aria-label={`search-input`} className={`search-input`}
             placeholder={`Search ...`}
             type={`text`}
           />

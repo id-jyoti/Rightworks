@@ -1,5 +1,3 @@
-// src/pages/CaseStudySutton.tsx
-import React from "react";
 const CaseStudySutton = ()=>{
   return (
     <div className={`page`}>
