@@ -6,43 +6,43 @@ import React, {
   useState, useRef, useEffect,
 } from "react";
 import "./Header.css";
-const Header = ()=>{
+const Header = () => {
   const [
     openMenu,
     setOpenMenu,
   ] = useState < string | null > null;
 
-  const navigate = useNavigate ();
-  const location = useLocation ();
+  const navigate = useNavigate();
+  const location = useLocation();
   const headerRef = useRef < HTMLDivElement > null;
 
   // Auto-close dropdowns when route changes
-  useEffect (()=>{
-    setOpenMenu (null);
+  useEffect(() => {
+    setOpenMenu(null);
   }, [
     location,
   ]);
   // Close dropdown when clicking outside
-  useEffect (()=>{
-    const handleClickOutside = event=>{
+  useEffect(() => {
+    const handleClickOutside = event => {
       if (
         headerRef.current &&
-        ! headerRef.current.contains (event.target)
+        !headerRef.current.contains(event.target)
       ) {
-        setOpenMenu (null);
+        setOpenMenu(null);
       }
     };
 
-    document.addEventListener (`mousedown`, handleClickOutside);
+    document.addEventListener(`mousedown`, handleClickOutside);
 
-    return ()=>{
-      document.removeEventListener (`mousedown`, handleClickOutside);
+    return () => {
+      document.removeEventListener(`mousedown`, handleClickOutside);
     };
   }, []);
 
   // Helper to toggle dropdowns
-  const toggleMenu = menu=>{
-    setOpenMenu (openMenu === menu ?
+  const toggleMenu = menu => {
+    setOpenMenu(openMenu === menu ?
       null :
       menu);
   };
@@ -51,7 +51,7 @@ const Header = ()=>{
     <header ref={headerRef} className={`header`}>
       {/* Logo */}
       <div className={`header-logo`}
-        onClick={()=>navigate (`/`)}
+        onClick={() => navigate(`/`)}
         style={{
           cursor: `pointer`,
         }}
@@ -67,8 +67,8 @@ const Header = ()=>{
       <nav className={`header-nav`}>
         {/* Products */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>{
-            toggleMenu (`products`);
+          <button className={`dropdown-btn`} onClick={() => {
+            toggleMenu(`products`);
           }}
           >
             {`Products `}
@@ -145,8 +145,8 @@ const Header = ()=>{
         </div>
         {/* Solutions */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>{
-            toggleMenu (`solutions`);
+          <button className={`dropdown-btn`} onClick={() => {
+            toggleMenu(`solutions`);
           }}
           >
             {`Solutions `}
@@ -185,7 +185,7 @@ const Header = ()=>{
                 <p>
                   {`Discover how tech can help your firm deliver better services and efficiency.`}
                 </p>
-                <button className={`overview-btn`} onClick={()=>navigate (`/solutions`)}>
+                <button className={`overview-btn`} onClick={() => navigate(`/solutions`)}>
                   {`VIEW SOLUTIONS`}
                 </button>
               </div>
@@ -194,8 +194,8 @@ const Header = ()=>{
         </div>
         {/* Pricing */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>{
-            toggleMenu (`pricing`);
+          <button className={`dropdown-btn`} onClick={() => {
+            toggleMenu(`pricing`);
           }}
           >
             {`Pricing `}
@@ -251,7 +251,7 @@ const Header = ()=>{
                 <p>
                   {`Plans tailored for accounting and tax pros.`}
                 </p>
-                <button className={`overview-btn`} onClick={()=>navigate (`/pricing`)}>
+                <button className={`overview-btn`} onClick={() => navigate(`/pricing`)}>
                   {`VIEW ALL PLANS`}
                 </button>
               </div>
@@ -260,8 +260,8 @@ const Header = ()=>{
         </div>
         {/* Resources */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>{
-            toggleMenu (`resources`);
+          <button className={`dropdown-btn`} onClick={() => {
+            toggleMenu(`resources`);
           }}
           >
             {`Resources `}
@@ -324,7 +324,7 @@ const Header = ()=>{
                 <p>
                   {`Learn how to secure client data in this eBook.`}
                 </p>
-                <button className={`overview-btn`} onClick={()=>navigate (`/resources/cybersecurity-ebook`)}>
+                <button className={`overview-btn`} onClick={() => navigate(`/resources/cybersecurity-ebook`)}>
                   {`DOWNLOAD EBOOK`}
                 </button>
               </div>
@@ -333,8 +333,8 @@ const Header = ()=>{
         </div>
         {/* Why Rightworks */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>{
-            toggleMenu (`why`);
+          <button className={`dropdown-btn`} onClick={() => {
+            toggleMenu(`why`);
           }}
           >
             {`Why Rightworks `}
@@ -397,7 +397,7 @@ const Header = ()=>{
                 <blockquote>
                   {`“We sleep easier with Rightworks hosting our data.” – Fancher S.`}
                 </blockquote>
-                <button className={`overview-btn`} onClick={()=>navigate (`/why/reviews`)}>
+                <button className={`overview-btn`} onClick={() => navigate(`/why/reviews`)}>
                   {`READ REVIEWS`}
                 </button>
               </div>
@@ -407,7 +407,7 @@ const Header = ()=>{
       </nav>
       {/* CTA */}
       <div className={`header-cta`}>
-        <button className={`cta-btn`} onClick={()=>navigate (`/get-started`)}>
+        <button className={`cta-btn`} onClick={() => navigate(`/get-started`)}>
           {`TALK TO AN EXPERT →`}
         </button>
       </div>

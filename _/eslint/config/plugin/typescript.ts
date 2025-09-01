@@ -401,6 +401,11 @@ export const rule=     {
   ],
   "@typescript-eslint/no-misused-promises": [
     2,
+    {
+      checksVoidReturn:  false,
+      checksSpreads:     true,
+      checksConditionals:true,
+    },
   ],
   "@typescript-eslint/no-misused-new": [
     2,
@@ -463,7 +468,33 @@ export const rule=     {
     2,
   ],
   "@typescript-eslint/naming-convention": [
-    0,
+    2,
+    {
+      suffix:  [],
+      selector:[
+        `variable`,
+      ],
+      prefix:   [],
+      modifiers:[],
+      format:   [],
+      custom:   {
+        regex:`(^[_$][0-9]*$)|(^[_$]?[A-Z0-9a-zα]+([_][A-Z0-9a-z]+)*[_$]?$)`,
+        match:true,
+      },
+    },
+    {
+      suffix:  [],
+      selector:[
+        `parameter`,
+      ],
+      prefix:   [],
+      modifiers:[],
+      format:   [],
+      custom:   {
+        regex:`^([_$]?[a-zα][0-9]+([_$][0-9]+)*[_]?)|([_$][0-9]+[_]?)$`,
+        match:true,
+      },
+    },
   ],
   "@typescript-eslint/method-signature-style": [
     2,
@@ -472,7 +503,10 @@ export const rule=     {
     2,
   ],
   "@typescript-eslint/max-params": [
-    0,
+    2,
+    {
+      max: 1,
+    },
   ],
   "@typescript-eslint/explicit-module-boundary-types": [
     0,

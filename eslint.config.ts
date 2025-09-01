@@ -41,8 +41,6 @@ export const setting=z1=>o2_2=>o2_1=>o2=>{
       files:          [
         `**/*.tsx`,
         `**/*.ts`,
-        `**/*.jsx`,
-        `**/*.js`,
       ],
     },
   ];
@@ -51,6 +49,7 @@ export const plugins=x1_=>{
   return {
     "perfectionist":     Plugin.perfectionist (``),
     "jsx-a11y":          Plugin.jsx_a11y (``),
+    // "common":            Plugin.common (``),
     "@typescript-eslint":Plugin.typescript (``),
     "@stylistic":        Plugin.stylistic (``),
   };
@@ -72,6 +71,7 @@ export const detect= o2_1=>o2=>{
 
   const filter=   _1=>Object.is (rule_active (`${_1.k}/${_1.a}`) (o2), false);
 
+  // eslint-disable-next-line @typescript-eslint/max-params
   const reduce=   (_1, _2)=>({
     ... _1,
     ... _2,
@@ -127,6 +127,7 @@ export const az=     o2_=>{
     ... Stylistic.rule,
     ... Perfectionist.rule,
     ... Jsx_a11y.rule,
+    ... Common.rule,
     ... Javascript.rule_over,
     ... Javascript.rule,
   };
@@ -169,14 +170,15 @@ const rule_active=  i2=>o2=>{
 
 const Url=          await import (`node:url`);
 const Path=         await import (`node:path`);
-const Globals=      await import (`globals`);
-const Typescript=   await import (`./eslint/plugin/typescript`);
-const Stylistic=    await import (`./eslint/plugin/stylistic`);
-const Perfectionist=await import (`./eslint/plugin/perfectionist`);
-const Jsx_a11y=     await import (`./eslint/plugin/jsx-a11y`);
-const Javascript=   await import (`./eslint/plugin/javascript`);
-const Plugin=       await import (`./eslint/plugin`);
-const Parser=       await import (`./eslint/parser`);
+const Globals=         await import (`globals`);
+const Typescript=   await import (`./_/eslint/config/plugin/typescript`);
+const Stylistic=    await import (`./_/eslint/config/plugin/stylistic`);
+const Perfectionist=await import (`./_/eslint/config/plugin/perfectionist`);
+const Jsx_a11y=     await import (`./_/eslint/config/plugin/jsx-a11y`);
+const Javascript=   await import (`./_/eslint/config/plugin/javascript`);
+// const Common=       await import (`./_/eslint/config/plugin/common`);
+const Plugin=       await import (`./_/eslint/config/plugin`);
+const Parser=       await import (`./_/eslint/config/parser`);
 const filename=     Url.fileURLToPath (import.meta.url);
 const dirname=      Path.dirname (filename);
 export default az (1);

@@ -107,7 +107,15 @@ export const rule={
     },
   ],
   "perfectionist/sort-jsx-props": [
-    0,
+    2,
+    {
+      type:         `natural`,
+      order:        `desc`,
+      ignorePattern:[],
+      ignoreCase:   false,
+      groups:       [],
+      customGroups: {},
+    },
   ],
   "perfectionist/sort-intersection-types": [
     2,
