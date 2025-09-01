@@ -127,7 +127,7 @@ export const az=     o2_=>{
     ... Stylistic.rule,
     ... Perfectionist.rule,
     ... Jsx_a11y.rule,
-    ... Common.rule,
+    // ... Common.rule,
     ... Javascript.rule_over,
     ... Javascript.rule,
   };
