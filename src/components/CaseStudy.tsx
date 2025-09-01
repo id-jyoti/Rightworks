@@ -5,8 +5,8 @@ import {
   Play,
 } from "lucide-react";
 import caseImage from "../assets/image.webp";
-const CaseStudy = () => {
-  const navigate = useNavigate();
+const CaseStudy = ()=>{
+  const navigate = useNavigate ();
   return (
     <section className={`case-study`}>
       <div className={`case-content`}>
@@ -19,24 +19,24 @@ const CaseStudy = () => {
           {`firm one step ahead of the competition.`}
         </p>
         <button className={`case-btn`}
-          onClick={() => navigate(`/case-study/sutton-frost-cary`)}
+          onClick={()=>navigate (`/case-study/sutton-frost-cary`)}
         >
           {`WATCH THEIR STORY`}
         </button>
       </div>
       <div className={`case-media`}
-        onClick={() => navigate(`/case-study/sutton-frost-cary`)}
+        onClick={()=>navigate (`/case-study/sutton-frost-cary`)}
         style={{
           cursor: `pointer`,
         }}
       >
         <div className={`case-image-wrapper`}>
-          <img alt={`Case Study`} className={`case-image`} src={caseImage} />
+          <img alt={`Case Study`} className={`case-image`} src={caseImage}/>
           <div className={`play-overlay`}>
-            <Play size={40} />
+            <Play size={40}/>
           </div>
           <div className={`case-caption`}>
-            <br />
+            <br/>
           </div>
         </div>
       </div>

@@ -80,15 +80,17 @@ const faqs = [
   },
 ];
 
-const QuickBooksHosting = ()=>{
+const QuickBooksHosting = () => {
   // FAQ accordion: only one open at a time
   const [
     openIndex,
     setOpenIndex,
-  ] = useState<number | null> (null);
+  ] = useState<number | null>(null);
 
-  const toggleFAQ = (index: number)=>{
-    setOpenIndex (prev=>prev === index ? null : index);
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(prev => (prev === index ?
+      null :
+      index));
   };
 
   return (
@@ -116,13 +118,13 @@ const QuickBooksHosting = ()=>{
           </div>
         </div>
         <div className={`quickbooks-hosting-image`}>
-          <img alt={`QuickBooks Hosting Workspace`} src={`../assets/QH1.webp`}/>
+          <img alt={`QuickBooks Hosting Workspace`} src={`../assets/QH1.webp`} />
         </div>
       </section>
       {/* Section 2 - Largest Intuit Solution Provider */}
       <section className={`quickbooks-provider`}>
         <div className={`quickbooks-provider-image`}>
-          <img alt={`Intuit QuickBooks Partner`} src={`../assets/QH2.webp`}/>
+          <img alt={`Intuit QuickBooks Partner`} src={`../assets/QH2.webp`} />
         </div>
         <div className={`quickbooks-provider-content`}>
           <p className={`section-subtitle`}>
@@ -164,7 +166,7 @@ const QuickBooksHosting = ()=>{
         </div>
         <div className={`features-grid`}>
           <div className={`feature-card`}>
-            <img alt={`Interface Icon`} src={`../assets/icons/QH1.svg`}/>
+            <img alt={`Interface Icon`} src={`../assets/icons/QH1.svg`} />
             <h3>
               {`Easy-to-use interface`}
             </h3>
@@ -174,7 +176,7 @@ const QuickBooksHosting = ()=>{
             </p>
           </div>
           <div className={`feature-card`}>
-            <img alt={`Security Icon`} src={`../assets/icons/QH2.svg`}/>
+            <img alt={`Security Icon`} src={`../assets/icons/QH2.svg`} />
             <h3>
               {`Top-tier security`}
             </h3>
@@ -184,7 +186,7 @@ const QuickBooksHosting = ()=>{
             </p>
           </div>
           <div className={`feature-card`}>
-            <img alt={`Collaboration Icon`} src={`../assets/icons/QH3.svg`}/>
+            <img alt={`Collaboration Icon`} src={`../assets/icons/QH3.svg`} />
             <h3>
               {`Remote collaboration`}
             </h3>
@@ -194,7 +196,7 @@ const QuickBooksHosting = ()=>{
             </p>
           </div>
           <div className={`feature-card`}>
-            <img alt={`Workflows Icon`} src={`../assets/icons/QH4.svg`}/>
+            <img alt={`Workflows Icon`} src={`../assets/icons/QH4.svg`} />
             <h3>
               {`Simplified workflows`}
             </h3>
@@ -204,7 +206,7 @@ const QuickBooksHosting = ()=>{
             </p>
           </div>
           <div className={`feature-card`}>
-            <img alt={`Insights Icon`} src={`../assets/icons/QH5.svg`}/>
+            <img alt={`Insights Icon`} src={`../assets/icons/QH5.svg`} />
             <h3>
               {`Real-time business insights`}
             </h3>
@@ -214,7 +216,7 @@ const QuickBooksHosting = ()=>{
             </p>
           </div>
           <div className={`feature-card`}>
-            <img alt={`Support Icon`} src={`../assets/icons/QH6.svg`}/>
+            <img alt={`Support Icon`} src={`../assets/icons/QH6.svg`} />
             <h3>
               {`Award-winning support`}
             </h3>
@@ -234,7 +236,7 @@ const QuickBooksHosting = ()=>{
           {`to QuickBooks and all your critical accounting, tax and business apps.`}
         </p>
         <div className={`demo-video`}>
-          <img alt={`QuickBooks Demo Preview`} src={`../assets/QH3.png`}/>
+          <img alt={`QuickBooks Demo Preview`} src={`../assets/QH3.png`} />
         </div>
       </section>
       {/* ========= Section 5: FAQs (accordion) ========= */}
@@ -243,20 +245,20 @@ const QuickBooksHosting = ()=>{
           {`Rightworks Cloud for QuickBooks Hosting FAQs`}
         </h2>
         <div className={`faq-list`}>
-          {faqs.map ((faq, index)=>(
-            <div key={index}
-              className={`faq-item ${openIndex === index ?
-                `open` :
-                ``}`}
+          {faqs.map((faq, index) => (
+            <div className={`faq-item ${openIndex === index ?
+              `open` :
+              ``}`}
+              key={index}
             >
               <button aria-controls={`faq-panel-${index}`}
                 aria-expanded={openIndex === index}
                 className={`faq-question`}
                 id={`faq-button-${index}`}
-                type={`button`}
-                onClick={()=>{
-                  toggleFAQ (index);
+                onClick={() => {
+                  toggleFAQ(index);
                 }}
+                type={`button`}
               >
                 <span className={`faq-q-text`}>
                   {faq.question}
@@ -267,19 +269,21 @@ const QuickBooksHosting = ()=>{
                     `+`}
                 </span>
               </button>
-              <section
-                aria-labelledby={`faq-button-${index}`}
-                className="faq-answer"
-                   id={`faq-panel-${index}`}
-                   style={{
-                   display: openIndex === index ? "block" : "none",
-                   }}
-                   >
-                 {faq.answer}
-                </section>   {/* ✅ correct closing tag */}
+              <section aria-labelledby={`faq-button-${index}`}
+                className={`faq-answer`}
+                id={`faq-panel-${index}`}
+                style={{
+                  display: openIndex === index ?
+                    `block` :
+                    `none`,
+                }}
+              >
+                {faq.answer}
+              </section>
+              {` `}
+              {/* ✅ correct closing tag */}
 
               {faq.answer}
-              </div>
             </div>
           ))}
         </div>

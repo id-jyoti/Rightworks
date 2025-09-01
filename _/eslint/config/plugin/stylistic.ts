@@ -282,6 +282,7 @@ export const rule={
   "@stylistic/no-multi-spaces": [
     2,
     {
+      includeTabs:      true,
       ignoreEOLComments:false,
       exceptions:       {
         VariableDeclarator: true,
@@ -304,14 +305,15 @@ export const rule={
     2,
     `all`,
     {
+      ternaryOperandBinaryExpressions:   true,
       returnAssign:                      true,
-      nestedBinaryExpressions:           false,
+      nestedConditionalExpressions:      true,
+      nestedBinaryExpressions:           true,
       ignoreJSX:                         `multi-line`,
       enforceForSequenceExpressions:     true,
-      enforceForNewInMemberExpressions:  true,
       enforceForFunctionPrototypeMethods:true,
-      enforceForArrowConditionals:       true,
       conditionalAssign:                 true,
+      allowParensAfterCommentPattern:    ``,
     },
   ],
   "@stylistic/no-confusing-arrow": [
@@ -498,9 +500,6 @@ export const rule={
   "@stylistic/jsx-quotes": [
     2,
     `prefer-double`,
-  ],
-  "@stylistic/jsx-props-no-multi-spaces": [
-    2,
   ],
   "@stylistic/jsx-pascal-case": [
     2,

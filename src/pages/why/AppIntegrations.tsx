@@ -5,42 +5,38 @@ import {
 import "./AppIntegrations.css";
 const appsData = [
   {
-    name: `Acctivate`,
-    image:`/assets/AI1.webp`,
-    id:   1,
-    description:
-      `Acctivate Inventory Software for QuickBooks. When a business outgrows the limitations of QuickBooks® inventory management, they need a robust solution designed to fit their growth.`,
+    name:       `Acctivate`,
+    image:      `/assets/AI1.webp`,
+    id:         1,
+    description:`Acctivate Inventory Software for QuickBooks. When a business outgrows the limitations of QuickBooks® inventory management, they need a robust solution designed to fit their growth.`,
     categories: [
       `Inventory management`,
     ],
   },
   {
-    name: `Accuware Label Connector`,
-    image:`/assets/AI2.webp`,
-    id:   2,
-    description:
-      `Label Connector adds powerful Label design and printing capability at your fingertips for users of QuickBooks Desktop.`,
+    name:       `Accuware Label Connector`,
+    image:      `/assets/AI2.webp`,
+    id:         2,
+    description:`Label Connector adds powerful Label design and printing capability at your fingertips for users of QuickBooks Desktop.`,
     categories: [
       `Inventory management`,
     ],
   },
   {
-    name: `Adobe DC`,
-    image:`/assets/AI3.webp`,
-    id:   3,
-    description:
-      `With Adobe, your firm or small business has everything it needs to create, edit, and review PDFs, as well as e-sign documents.`,
+    name:       `Adobe DC`,
+    image:      `/assets/AI3.webp`,
+    id:         3,
+    description:`With Adobe, your firm or small business has everything it needs to create, edit, and review PDFs, as well as e-sign documents.`,
     categories: [
       `PDF tools`,
       `Productivity`,
     ],
   },
   {
-    name: `ADP`,
-    image:`/assets/AI4.webp`,
-    id:   4,
-    description:
-      `ADP offers Payroll Services, HR Software and Tax and Compliance services for businesses of all sizes.`,
+    name:       `ADP`,
+    image:      `/assets/AI4.webp`,
+    id:         4,
+    description:`ADP offers Payroll Services, HR Software and Tax and Compliance services for businesses of all sizes.`,
     categories: [
       `Expense management`,
       `Payroll`,
@@ -48,21 +44,19 @@ const appsData = [
     ],
   },
   {
-    name: `Autofy / Autofy Insights / Autofy Dext`,
-    image:`/assets/AI5.webp`,
-    id:   5,
-    description:
-      `Autofy provides powerful QuickBooks integration for e-commerce systems, Salesforce, and more.`,
+    name:       `Autofy / Autofy Insights / Autofy Dext`,
+    image:      `/assets/AI5.webp`,
+    id:         5,
+    description:`Autofy provides powerful QuickBooks integration for e-commerce systems, Salesforce, and more.`,
     categories: [
       `Payroll`,
     ],
   },
   {
-    name: `Avalara AvaTax`,
-    image:`/assets/AI6.webp`,
-    id:   6,
-    description:
-      `Avalara AvaTax uses automation to make tax determination faster, easier, and more accurate.`,
+    name:       `Avalara AvaTax`,
+    image:      `/assets/AI6.webp`,
+    id:         6,
+    description:`Avalara AvaTax uses automation to make tax determination faster, easier, and more accurate.`,
     categories: [
       `Tax tools`,
     ],
@@ -127,17 +121,17 @@ const AppIntegrations: React.FC = ()=>{
           </p>
           {/* Search + Filter */}
           <div className={`search-filter`}>
-            <input aria-label={`search`} placeholder={`Search ...`}
+            <input aria-label={`search`} onChange={e => {
+                setSearch(e.target.value);
+              }}
+              placeholder={`Search ...`}
               type={`text`}
               value={search}
-              onChange={e=>{
-                setSearch (e.target.value);
-              }}
             />
-            <select value={selectedCategory}
-              onChange={e=>{
-                setSelectedCategory (e.target.value);
+            <select onChange={e => {
+                setSelectedCategory(e.target.value);
               }}
+              value={selectedCategory}
             >
               {categories.map (cat=>(
                 <option key={cat} value={cat}>
@@ -161,7 +155,7 @@ const AppIntegrations: React.FC = ()=>{
         </h2>
         <div className={`apps-grid`}>
           {filteredApps.map (app=>(
-            <div key={app.id} className={`app-card`}>
+            <div className={`app-card`} key={app.id}>
               <img alt={app.name} src={app.image}/>
               <h3>
                 {app.name}

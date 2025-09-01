@@ -110,7 +110,7 @@ export const rule={
     2,
     {
       type:         `natural`,
-      order:        `desc`,
+      order:        `asc`,
       ignorePattern:[],
       ignoreCase:   false,
       groups:       [],

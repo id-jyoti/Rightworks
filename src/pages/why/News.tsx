@@ -103,18 +103,18 @@ const News: React.FC = ()=>{
       <section className={`news-filters`}>
         <div className={`filter-container`}>
           <input aria-label={`filter`} className={`search-input`}
+            onChange={e => {
+              setSearchTerm(e.target.value);
+            }}
             placeholder={`Search ...`}
             type={`text`}
             value={searchTerm}
-            onChange={e=>{
-              setSearchTerm (e.target.value);
-            }}
           />
           <select className={`filter-dropdown`}
-            value={selectedCategory}
-            onChange={e=>{
-              setSelectedCategory (e.target.value);
+            onChange={e => {
+              setSelectedCategory(e.target.value);
             }}
+            value={selectedCategory}
           >
             {categories.map ((cat, i)=>(
               <option key={i} value={cat}>
@@ -123,10 +123,10 @@ const News: React.FC = ()=>{
             ))}
           </select>
           <select className={`filter-dropdown`}
-            value={selectedBusinessType}
-            onChange={e=>{
-              setSelectedBusinessType (e.target.value);
+            onChange={e => {
+              setSelectedBusinessType(e.target.value);
             }}
+            value={selectedBusinessType}
           >
             {businessTypes.map ((type, i)=>(
               <option key={i} value={type}>
@@ -153,7 +153,7 @@ const News: React.FC = ()=>{
         <div className={`news-list`}>
           {filteredNews.length > 0 ?
               filteredNews.map (news=>(
-                <div key={news.id} className={`news-card`}>
+                <div className={`news-card`} key={news.id}>
                   <h3>
                     {news.title}
                   </h3>

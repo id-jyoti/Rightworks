@@ -77,12 +77,12 @@ const Footer = ()=>{
           </p>
           <div className={`footer-subscribe`}>
             <input className={`footer-input`}
+              onChange={e => {
+                setEmail(e.target.value);
+              }}
               placeholder={`Email`}
               type={`email`}
               value={email}
-              onChange={e=>{
-                setEmail (e.target.value);
-              }}
             />
             <button className={`footer-btn`} onClick={handleSubscribe}>
               {`Subscribe`}

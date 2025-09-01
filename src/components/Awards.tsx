@@ -2,7 +2,6 @@ import {
   Link,
 } from "react-router-dom";
 // src/components/Awards.tsx
-import React from "react";
 import usersLoveUs from "../assets/7.webp";
 import gridLeaderSmall from "../assets/6.webp";
 import gridLeader from "../assets/5.webp";
