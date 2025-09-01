@@ -12,22 +12,22 @@ import {
   Facebook,
 } from "lucide-react";
 import "./Footer.css";
-const Footer = ()=>{
+const Footer = () => {
   const [
     email,
     setEmail,
-  ] = useState (``);
+  ] = useState(``);
 
-  const navigate = useNavigate ();
+  const navigate = useNavigate();
 
-  const handleSubscribe = ()=>{
-    if (! email) {
-      alert (`Please enter a valid email address.`);
+  const handleSubscribe = () => {
+    if (!email) {
+      alert(`Please enter a valid email address.`);
 
       return;
     }
-    alert (`Subscribed successfully with ${email}`);
-    setEmail (``);
+    alert(`Subscribed successfully with ${email}`);
+    setEmail(``);
   };
 
   return (
@@ -36,7 +36,7 @@ const Footer = ()=>{
         {/* Left - Call + Social + Ratings */}
         <div className={`footer-left`}>
           <p className={`footer-call`}>
-            <img alt={`Call`} src={`/assets/call.svg`}/>
+            <img alt={`Call`} src={`/assets/call.svg`} />
             {`Call `}
             <strong>
               {`866.901.3826`}
@@ -44,25 +44,25 @@ const Footer = ()=>{
           </p>
           <div className={`footer-social`}>
             <a href={`https://www.facebook.com/`} rel={`noopener noreferrer`} target={`_blank`}>
-              <Facebook/>
+              <Facebook />
             </a>
             <a href={`https://twitter.com/`} rel={`noopener noreferrer`} target={`_blank`}>
-              <Twitter/>
+              <Twitter />
             </a>
             <a href={`https://www.youtube.com/`} rel={`noopener noreferrer`} target={`_blank`}>
-              <Youtube/>
+              <Youtube />
             </a>
             <a href={`https://www.linkedin.com/`} rel={`noopener noreferrer`} target={`_blank`}>
-              <Linkedin/>
+              <Linkedin />
             </a>
             <a href={`https://www.instagram.com/`} rel={`noopener noreferrer`} target={`_blank`}>
-              <Instagram/>
+              <Instagram />
             </a>
           </div>
           <div className={`footer-ratings`}>
-            <img alt={`BBB A+ Rating`} src={`/assets/bb.png`}/>
+            <img alt={`BBB A+ Rating`} src={`/assets/bb.png`} />
             <Link to={`/reviews`}>
-              <img alt={`G2 Review`} className={`clickable`} src={`/assets/G2.png`}/>
+              <img alt={`G2 Review`} className={`clickable`} src={`/assets/G2.png`} />
             </Link>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Footer = ()=>{
             {`straight to your inbox.`}
           </p>
           <div className={`footer-subscribe`}>
-            <input className={`footer-input`}
+            <input aria-label={`email`} className={`footer-input`}
               onChange={e => {
                 setEmail(e.target.value);
               }}
@@ -89,7 +89,7 @@ const Footer = ()=>{
             </button>
           </div>
           <label className={`footer-privacy`}>
-            <input type={`checkbox`}/>
+            <input type={`checkbox`} />
             {` `}
             {`I would like to sign up to receive email`}
             {`from Rightworks. See`}
@@ -235,7 +235,7 @@ const Footer = ()=>{
       {/* Bottom */}
       <div className={`footer-bottom`}>
         {`© `}
-        {(new Date).getFullYear ()}
+        {(new Date).getFullYear()}
         {` `}
         {`Rightworks. All rights reserved.`}
       </div>

@@ -49,7 +49,7 @@ export const plugins=x1_=>{
   return {
     "perfectionist":     Plugin.perfectionist (``),
     "jsx-a11y":          Plugin.jsx_a11y (``),
-    // "common":            Plugin.common (``),
+    "common":            Plugin.common (``),
     "@typescript-eslint":Plugin.typescript (``),
     "@stylistic":        Plugin.stylistic (``),
   };
@@ -176,7 +176,7 @@ const Stylistic=    await import (`./_/eslint/config/plugin/stylistic`);
 const Perfectionist=await import (`./_/eslint/config/plugin/perfectionist`);
 const Jsx_a11y=     await import (`./_/eslint/config/plugin/jsx-a11y`);
 const Javascript=   await import (`./_/eslint/config/plugin/javascript`);
-// const Common=       await import (`./_/eslint/config/plugin/common`);
+const Common=       await import (`./_/eslint/config/plugin/common`);
 const Plugin=       await import (`./_/eslint/config/plugin`);
 const Parser=       await import (`./_/eslint/config/parser`);
 const filename=     Url.fileURLToPath (import.meta.url);

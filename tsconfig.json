@@ -75,6 +75,7 @@
     "preserveConstEnums": true,
     "preserveSymlinks": false,
     "preserveValueImports": false,
+    "extendedDiagnostics": false,
     "preserveWatchOutput": false,
     "pretty": false,
     "removeComments": true,

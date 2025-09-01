@@ -1,4 +1,12 @@
 {
+  "author": "Jyoti Prakash Maan",
+  "description": "ts",
+  "keywords": [],
+  "license": "ISC",
+  "main": "_.ts",
+  "name": "ts",
+  "type": "module",
+  "version": "1.1.1",
   "dependencies": {
     "@tailwindcss/postcss": "4.1.12",
     "axios": "1.11.0",
@@ -19,30 +27,27 @@
     "@types/react-dom": "19.1.9",
     "@typescript-eslint/eslint-plugin": "8.41.0",
     "@typescript-eslint/parser": "8.41.0",
-    "@vitejs/plugin-react": "5.0.2",
     "@vitejs/plugin-react-swc": "4.0.1",
-    "autoprefixer": "10.4.21",
     "esbuild": "0.25.9",
     "eslint": "9.34.0",
+    "eslint-plugin-common": "file:./_/eslint/plugin/common",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-perfectionist": "4.15.0",
     "eslint-plugin-promise": "7.2.1",
-    "globals": "16.3.0",
     "jiti": "2.5.1",
     "jscodeshift": "17.3.0",
+    "typescript": "5.9.2",
+    "autoprefixer": "10.4.21",
+    "globals": "16.3.0",
     "postcss": "8.5.6",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "tailwindcss": "4.1.12",
-    "typescript": "5.9.2",
     "vite": "7.1.4"
   },
-  "name": "rightworks",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview"
-  },
-  "type": "module",
-  "version": "1.0.0"
+  }
 }
