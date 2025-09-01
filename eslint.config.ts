@@ -131,13 +131,13 @@ export const az=     o2_=>{
     ... Javascript.rule_over,
     ... Javascript.rule,
     ... {
+      "perfectionist/sort-jsx-props": [
+        0,
+      ],
       "no-console": [
         0,
       ],
       "@typescript-eslint/naming-convention": [
-        0,
-      ],
-      "@perfectionist/sort-jsx-props": [
         0,
       ],
     },
