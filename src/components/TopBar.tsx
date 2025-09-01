@@ -5,7 +5,7 @@ import {
   FiSearch,
 } from "react-icons/fi";
 // src/components/Topbar.tsx
-import React, {
+import {
   useState, useEffect,
 } from "react";
 const TopBar = ()=>{
