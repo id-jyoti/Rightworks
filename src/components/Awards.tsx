@@ -1,14 +1,14 @@
-// src/components/Awards.tsx
-import React from "react";
 import {
   Link,
 } from "react-router-dom";
-import highPerformer from "../assets/2.webp";
-import bestSupport from "../assets/3.webp";
-import easiestUse from "../assets/4.webp";
-import gridLeader from "../assets/5.webp";
-import gridLeaderSmall from "../assets/6.webp";
+// src/components/Awards.tsx
+import React from "react";
 import usersLoveUs from "../assets/7.webp";
+import gridLeaderSmall from "../assets/6.webp";
+import gridLeader from "../assets/5.webp";
+import easiestUse from "../assets/4.webp";
+import bestSupport from "../assets/3.webp";
+import highPerformer from "../assets/2.webp";
 import g2Icon from "../assets/1.webp";
 const Awards = ()=>{
   return (

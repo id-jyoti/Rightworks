@@ -6,8 +6,11 @@ export const setting=z1=>o2_2=>o2_1=>o2=>{
     sourceType:   `module`,
     parserOptions:o2_2,
     parser:       z1,
-    globals:      {},
-    ecmaVersion:  `latest`,
+    globals:      {
+      ... Globals.browser,
+      ... Globals.node,
+    },
+    ecmaVersion: `latest`,
   };
 
   const linterOptions=  {
@@ -69,7 +72,6 @@ export const detect= o2_1=>o2=>{
 
   const filter=   _1=>Object.is (rule_active (`${_1.k}/${_1.a}`) (o2), false);
 
-  // eslint-disable-next-line @typescript-eslint/max-params
   const reduce=   (_1, _2)=>({
     ... _1,
     ... _2,
@@ -167,6 +169,7 @@ const rule_active=  i2=>o2=>{
 
 const Url=          await import (`node:url`);
 const Path=         await import (`node:path`);
+const Globals=      await import (`globals`);
 const Typescript=   await import (`./eslint/plugin/typescript`);
 const Stylistic=    await import (`./eslint/plugin/stylistic`);
 const Perfectionist=await import (`./eslint/plugin/perfectionist`);

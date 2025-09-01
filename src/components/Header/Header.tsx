@@ -1,20 +1,20 @@
-// src/components/Header.tsx
-import React, {
-  useState, useEffect, useRef,
-} from "react";
 import {
   useNavigate, useLocation, Link,
 } from "react-router-dom";
+// src/components/Header.tsx
+import React, {
+  useState, useRef, useEffect,
+} from "react";
 import "./Header.css";
 const Header = ()=>{
   const [
     openMenu,
     setOpenMenu,
-  ] = useState<string | null>null;
+  ] = useState < string | null > null;
 
   const navigate = useNavigate ();
   const location = useLocation ();
-  const headerRef = useRef<HTMLDivElement>null;
+  const headerRef = useRef < HTMLDivElement > null;
 
   // Auto-close dropdowns when route changes
   useEffect (()=>{
@@ -67,7 +67,10 @@ const Header = ()=>{
       <nav className={`header-nav`}>
         {/* Products */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>toggleMenu (`products`)}>
+          <button className={`dropdown-btn`} onClick={()=>{
+            toggleMenu (`products`);
+          }}
+          >
             {`Products `}
             {openMenu === `products` ?
               `▲` :
@@ -142,7 +145,10 @@ const Header = ()=>{
         </div>
         {/* Solutions */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>toggleMenu (`solutions`)}>
+          <button className={`dropdown-btn`} onClick={()=>{
+            toggleMenu (`solutions`);
+          }}
+          >
             {`Solutions `}
             {openMenu === `solutions` ?
               `▲` :
@@ -188,7 +194,10 @@ const Header = ()=>{
         </div>
         {/* Pricing */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>toggleMenu (`pricing`)}>
+          <button className={`dropdown-btn`} onClick={()=>{
+            toggleMenu (`pricing`);
+          }}
+          >
             {`Pricing `}
             {openMenu === `pricing` ?
               `▲` :
@@ -251,7 +260,10 @@ const Header = ()=>{
         </div>
         {/* Resources */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>toggleMenu (`resources`)}>
+          <button className={`dropdown-btn`} onClick={()=>{
+            toggleMenu (`resources`);
+          }}
+          >
             {`Resources `}
             {openMenu === `resources` ?
               `▲` :
@@ -321,7 +333,10 @@ const Header = ()=>{
         </div>
         {/* Why Rightworks */}
         <div className={`dropdown`}>
-          <button className={`dropdown-btn`} onClick={()=>toggleMenu (`why`)}>
+          <button className={`dropdown-btn`} onClick={()=>{
+            toggleMenu (`why`);
+          }}
+          >
             {`Why Rightworks `}
             {openMenu === `why` ?
               `▲` :

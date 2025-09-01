@@ -101,7 +101,6 @@
   "exclude": [],
   "include": [
     "**/*.tsx",
-    "**/*.mjs",
     "**/*.ts"
   ],
   "typeAcquisition": {

@@ -1,16 +1,16 @@
+import {
+  useNavigate, Link,
+} from "react-router-dom";
 import React, {
   useState,
 } from "react";
 import {
-  Facebook,
-  Twitter,
   Youtube,
+  Twitter,
   Linkedin,
   Instagram,
+  Facebook,
 } from "lucide-react";
-import {
-  Link, useNavigate,
-} from "react-router-dom";
 import "./Footer.css";
 const Footer = ()=>{
   const [
@@ -77,10 +77,12 @@ const Footer = ()=>{
           </p>
           <div className={`footer-subscribe`}>
             <input className={`footer-input`}
-              onChange={e=>setEmail (e.target.value)}
               placeholder={`Email`}
               type={`email`}
               value={email}
+              onChange={e=>{
+                setEmail (e.target.value);
+              }}
             />
             <button className={`footer-btn`} onClick={handleSubscribe}>
               {`Subscribe`}
