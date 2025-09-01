@@ -130,6 +130,17 @@ export const az=     o2_=>{
     // ... Common.rule,
     ... Javascript.rule_over,
     ... Javascript.rule,
+    ... {
+      "no-console": [
+        0,
+      ],
+      "@typescript-eslint/naming-convention": [
+        0,
+      ],
+      "@perfectionist/sort-jsx-props": [
+        0,
+      ],
+    },
   };
 
   return setting (Parser.typescript (``)) (use) (list) (act);
@@ -176,6 +187,7 @@ const Stylistic=    await import (`./_/eslint/config/plugin/stylistic`);
 const Perfectionist=await import (`./_/eslint/config/plugin/perfectionist`);
 const Jsx_a11y=     await import (`./_/eslint/config/plugin/jsx-a11y`);
 const Javascript=   await import (`./_/eslint/config/plugin/javascript`);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Common=       await import (`./_/eslint/config/plugin/common`);
 const Plugin=       await import (`./_/eslint/config/plugin`);
 const Parser=       await import (`./_/eslint/config/parser`);
