@@ -1,4 +1,4 @@
-import React, {
+import {
   useState,
 } from "react";
 import "./QuickBooksHosting.css";
@@ -85,9 +85,12 @@ const QuickBooksHosting = ()=>{
   const [
     openIndex,
     setOpenIndex,
-  ] = useState<number | null>null;
+  ] = useState<number | null> (null);
 
-  const toggleFAQ = index=>setOpenIndex (prev=>(prev === index? null: index));
+  const toggleFAQ = (index: number)=>{
+    setOpenIndex (prev=>prev === index ? null : index);
+  };
+
   return (
     <>
       {/* Section 1 - Cloud Hosting */}
@@ -100,12 +103,12 @@ const QuickBooksHosting = ()=>{
             {`Not all QuickBooks hosting is created equal. Our cloud hosting solution, Rightworks Cloud Hosting, has all the security features you need to safely work and collaborate in QuickBooks anytime, anywhere.`}
           </p>
           <div className={`cta-buttons`}>
-            <a className={`btn-primary`} href={`#`}>
+            <a className={`btn-primary`} href={`/#`}>
               {` `}
               {`BUSINESS PLANS`}
               {` `}
             </a>
-            <a className={`btn-outline`} href={`#`}>
+            <a className={`btn-outline`} href={`/#`}>
               {` `}
               {`FIRM PLANS`}
               {` `}
@@ -132,12 +135,12 @@ const QuickBooksHosting = ()=>{
             {`As the largest Intuit partner, Rightworks is proud to be recognized as a trusted provider of secure hosting solutions for QuickBooks applications.`}
           </p>
           <div className={`cta-buttons`}>
-            <a className={`btn-primary`} href={`#`}>
+            <a className={`btn-primary`} href={`/#`}>
               {` `}
               {`BUSINESS PLANS`}
               {` `}
             </a>
-            <a className={`btn-outline`} href={`#`}>
+            <a className={`btn-outline`} href={`/#`}>
               {` `}
               {`FIRM PLANS`}
               {` `}
@@ -250,8 +253,10 @@ const QuickBooksHosting = ()=>{
                 aria-expanded={openIndex === index}
                 className={`faq-question`}
                 id={`faq-button-${index}`}
-                onClick={()=>toggleFAQ (index)}
                 type={`button`}
+                onClick={()=>{
+                  toggleFAQ (index);
+                }}
               >
                 <span className={`faq-q-text`}>
                   {faq.question}
@@ -262,17 +267,18 @@ const QuickBooksHosting = ()=>{
                     `+`}
                 </span>
               </button>
-              <div aria-labelledby={`faq-button-${index}`}
-                className={`faq-answer`}
-                id={`faq-panel-${index}`}
-                role={`region`}
-                style={{
-                  display: openIndex === index ?
-                    `block` :
-                    `none`,
-                }}
-              >
-                {faq.answer}
+              <section
+                aria-labelledby={`faq-button-${index}`}
+                className="faq-answer"
+                   id={`faq-panel-${index}`}
+                   style={{
+                   display: openIndex === index ? "block" : "none",
+                   }}
+                   >
+                 {faq.answer}
+                </section>   {/* ✅ correct closing tag */}
+
+              {faq.answer}
               </div>
             </div>
           ))}
