@@ -6,6 +6,7 @@ const Login= ()=>{
     {
       title:   `Rightworks Cloud Hosting`,
       subtitle:`AppHub`,
+      link:    `/login/loginpage`,
       icon:    `/assets/icons/login1.svg`,
     },
     {

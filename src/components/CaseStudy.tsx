@@ -24,7 +24,7 @@ const CaseStudy = ()=>{
           {`WATCH THEIR STORY`}
         </button>
       </div>
-      <div className={`case-media`}
+      <button className={`case-media`}
         onClick={()=>navigate (`/case-study/sutton-frost-cary`)}
         style={{
           cursor: `pointer`,
@@ -39,7 +39,7 @@ const CaseStudy = ()=>{
             <br/>
           </div>
         </div>
-      </div>
+      </button>
     </section>
   );
 };
