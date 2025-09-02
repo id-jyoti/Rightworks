@@ -39,6 +39,7 @@ import TransactionProAffiliate from "./pages/Partners/Affiliate";
 import Advocates from "./pages/Partners/Advocates";
 import NotFound from "./pages/NotFound";
 import TermsAndConditions from "./pages/Login/TermsAndConditions";
+import ResetCode from "./pages/Login/ResetCode";
 import Privacy from "./pages/Login/Privacy";
 import LoginPage from "./pages/Login/LoginPage";
 import ForgotPassword from "./pages/Login/ForgotPassword";
@@ -124,7 +125,8 @@ const App = ()=>{
             <Route element={<ForgotPassword/>} path={`/forgotpassword`}/>
             <Route element={<Privacy/>} path={`/privacy`}/>
             <Route element={<TermsAndConditions/>} path={`/termsandconditions`}/>
-            <Route element={<NotFound/>} path={`/notfound`}/>
+            <Route element={<ResetCode/>} path={`/resetcode`}/>
+            <Route element={<NotFound/>} path={`*`}/>
           </Routes>
         </main>
         <Footer/>
