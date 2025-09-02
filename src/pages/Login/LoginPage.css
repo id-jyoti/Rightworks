@@ -1,0 +1,95 @@
+/* Full background */
+.login-wrapper {
+  background-color: #f3f3f3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.15);
+  width: 540px;   /* broader */
+  text-align: center;
+}
+
+/* Labels */
+form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin: 12px 0 5px;
+  color: #111010;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+/* Sign in button */
+.signin-btn {
+  width: 100%;
+  background: #6a0dad;
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.signin-btn:hover {
+  background: #5a0099;
+}
+
+/* Forgot password link */
+.links {
+  margin-top: 18px;
+}
+
+.links a {
+  color: #6a0dad;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Dark footer inside card */
+.login-footer-dark {
+  margin-top: 25px;
+  padding: 18px 12px;
+  background: #0f0b0b; /* black background */
+  color: #f7f7f8;      /* light text */
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.login-footer-dark a {
+  color: #a78bfa; /* lighter purple */
+  text-decoration: none;
+}
+
+.footer-dark a:hover {
+  text-decoration: underline;
+}
+
+.footer-dark .policies {
+  margin-top: 8px;
+}

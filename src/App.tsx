@@ -1,7 +1,6 @@
 import {
   Routes, BrowserRouter as Router, Route,
 } from "react-router-dom";
-import React from "react";
 import Reviews from "./pages/why/Reviews";
 import Partners from "./pages/why/Partners";
 import News from "./pages/why/News";
@@ -38,6 +37,11 @@ import Offers from "./pages/Partners/Offers";
 import Become from "./pages/Partners/Become";
 import TransactionProAffiliate from "./pages/Partners/Affiliate";
 import Advocates from "./pages/Partners/Advocates";
+import NotFound from "./pages/NotFound";
+import TermsAndConditions from "./pages/Login/TermsAndConditions";
+import Privacy from "./pages/Login/Privacy";
+import LoginPage from "./pages/Login/LoginPage";
+import ForgotPassword from "./pages/Login/ForgotPassword";
 import Login from "./pages/Login";
 // Pages
 import Home from "./pages/Home";
@@ -50,7 +54,7 @@ import TopBar from "./components/TopBar";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-function App () {
+const App = ()=>{
   return (
     <div className={`min-h-screen bg-white text-xl font-semibold`}>
       <Router>
@@ -115,12 +119,17 @@ function App () {
             {`// About`}
             <Route element={<Story/>} path={`/about/story`}/>
             <Route element={<Careers/>} path={`/about/careers`}/>
-
+            {`// Login Page`}
+            <Route element={<LoginPage/>} path={`/loginpage`}/>
+            <Route element={<ForgotPassword/>} path={`/forgotpassword`}/>
+            <Route element={<Privacy/>} path={`/privacy`}/>
+            <Route element={<TermsAndConditions/>} path={`/termsandconditions`}/>
+            <Route element={<NotFound/>} path={`/notfound`}/>
           </Routes>
         </main>
         <Footer/>
       </Router>
     </div>
   );
-}
+};
 export default App;

@@ -56,12 +56,10 @@ const Header = ()=>{
           cursor: `pointer`,
         }}
       >
-        <span className={`logo-main`}>
-          {`rightworks`}
-        </span>
-        <span className={`logo-sub`}>
-          {`formerly Right Networks`}
-        </span>
+        <img alt={`Rightworks`}
+          className={`logo`}
+          src={`/assets/logos/logo.svg`}
+        />
       </button>
       {/* Navigation */}
       <nav className={`header-nav`}>

@@ -13,17 +13,20 @@
 /* Logo */
 .header-logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: left;
   line-height: 1.2;
 }
 
 .logo-main {
   font-size: 20px;
   font-weight: 700;
-  color: #2a0066; /* dark purple */
+  color: #2a0066;
+  /* dark purple */
 }
 
 .logo-sub {
   font-size: 10px;
   color: #888;
+  display: flex;
+  flex-direction: left;
 }

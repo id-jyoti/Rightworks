@@ -1,0 +1,102 @@
+/* General Page Styling */
+.privacy-page {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+}
+
+/* Global variables */
+:root {
+  --brand-navy: #121a3b;
+  /* header background */
+  --page-bg: #ffffff;
+  /* page background */
+  --notch: 80px;
+  /* concave cut size */
+}
+
+/* Header Section - full width with one concave corner */
+
+.privacy-header {
+  position: relative;
+  width: 100%;
+  background: var(--brand-navy);
+  color: #fff;
+  text-align: left;
+  padding: 4.5rem clamp(16px, 4vw, 56px);
+  margin: 0 0 2rem 0;
+
+  /* convex rounded corner */
+  border-radius: 0 0 var(--notch) 0;
+}
+
+.privacy-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --notch: 48px;
+  }
+}
+
+/* Section Styling */
+.privacy-section {
+  margin-bottom: 2.5rem;
+}
+
+.privacy-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #190049;
+}
+
+.privacy-section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* List Styling */
+.privacy-section ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.privacy-section ul li {
+  margin-bottom: 0.6rem;
+}
+
+.privacy-section ul ul {
+  list-style: circle inside;
+  margin-top: 0.5rem;
+}
+
+/* Contents Section */
+.privacy-contents {
+  list-style: none;
+  padding: 0;
+}
+
+.privacy-contents li {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  background: #f9f9ff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.privacy-contents li:hover {
+  background: #ececff;
+  border-color: #190049;
+}
