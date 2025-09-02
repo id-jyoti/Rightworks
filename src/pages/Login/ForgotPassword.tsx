@@ -38,10 +38,10 @@ const ForgotPassword: React.FC = ()=>{
             {`SEND EMAIL`}
           </b>
           {`. Then, check`}
-          {`your inbox (or spam folder) for our email. If you've already received`}
-          {`a reset code, enter your email and click`}
+          {`your inbox (or spam folder) for our email. If you've already received a`}
+          {` reset code, enter your email and click`}
           <b>
-            {`I HAVE A CODE`}
+            {`  I HAVE A CODE`}
           </b>
           {`.`}
         </p>
