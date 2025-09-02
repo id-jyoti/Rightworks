@@ -71,7 +71,6 @@ export const detect= o2_1=>o2=>{
 
   const filter=   _1=>Object.is (rule_active (`${_1.k}/${_1.a}`) (o2), false);
 
-  // eslint-disable-next-line @typescript-eslint/max-params
   const reduce=   (_1, _2)=>({
     ... _1,
     ... _2,
@@ -134,7 +133,16 @@ export const az=     o2_=>{
       "perfectionist/sort-jsx-props": [
         0,
       ],
+      "no-ternary": [
+        0,
+      ],
       "no-console": [
+        0,
+      ],
+      "@typescript-eslint/strict-boolean-expressions": [
+        0,
+      ],
+      "@typescript-eslint/no-unnecessary-condition": [
         0,
       ],
       "@typescript-eslint/naming-convention": [

@@ -2,7 +2,7 @@ import {
   useNavigate, useLocation, Link,
 } from "react-router-dom";
 // src/components/Header.tsx
-import React, {
+import {
   useState, useRef, useEffect,
 } from "react";
 import "./Header.css";
@@ -10,11 +10,11 @@ const Header = ()=>{
   const [
     openMenu,
     setOpenMenu,
-  ] = useState < string | null > null;
+  ] = useState ();
 
   const navigate = useNavigate ();
   const location = useLocation ();
-  const headerRef = useRef < HTMLDivElement > null;
+  const headerRef = useRef ();
 
   // Auto-close dropdowns when route changes
   useEffect (()=>{
@@ -48,9 +48,9 @@ const Header = ()=>{
   };
 
   return (
-    <header className={`header`} ref={headerRef}>
+    <header ref={headerRef} className={`header`}>
       {/* Logo */}
-      <div className={`header-logo`}
+      <button className={`header-logo`}
         onClick={()=>navigate (`/`)}
         style={{
           cursor: `pointer`,
@@ -62,7 +62,7 @@ const Header = ()=>{
         <span className={`logo-sub`}>
           {`formerly Right Networks`}
         </span>
-      </div>
+      </button>
       {/* Navigation */}
       <nav className={`header-nav`}>
         {/* Products */}
