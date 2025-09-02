@@ -1,7 +1,7 @@
 import {
   ArrowRight,
 } from "lucide-react";
-const Login:= ()=>{
+const Login= ()=>{
   const portals = [
     {
       title:   `Rightworks Cloud Hosting`,

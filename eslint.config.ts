@@ -140,6 +140,9 @@ export const az=     o2_=>{
       "@typescript-eslint/naming-convention": [
         0,
       ],
+      "@typescript-eslint/max-params": [
+        0,
+      ],
     },
   };
 
