@@ -1,22 +1,36 @@
 import type React from "react";
+import {
+  useNavigate, Link,
+} from "react-router-dom";
 import "./LoginPage.css";
 const LoginPage: React.FC = ()=>{
+  const navigate = useNavigate ();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>)=>{
+    e.preventDefault ();
+    navigate (`/dashboard`).catch ((err: unknown)=>{
+      console.error (`Navigation failed:`, err);
+    });
+  };
+
   return (
     <div className={`login-wrapper`}>
       <div className={`login-card`}>
         {/* Form */}
-        <form>
+        <form onSubmit={handleSubmit}>
           <label>
             {`Email`}
           </label>
-          <input aria-label={`user@website.com`} placeholder={`user@website.com`}
+          <input aria-label={`user@website.com`}
+            placeholder={`user@website.com`}
             type={`email`}
             required
           />
           <label>
             {`Password`}
           </label>
-          <input aria-label={`Password`}placeholder={`Password`}
+          <input aria-label={`Password`}
+            placeholder={`Password`}
             type={`password`}
             required
           />
@@ -26,18 +40,17 @@ const LoginPage: React.FC = ()=>{
         </form>
         {/* Forgot password */}
         <div className={`links`}>
-          <a href={`/#`}>
+          <Link to={`/forgotpassword`}>
             {`Forgot password?`}
-          </a>
+          </Link>
         </div>
         {/* Footer with dark background */}
         <div className={`login-footer-dark`}>
           <p>
-            {`Questions? Go to our`}
-            {` `}
-            <a href={`/#`}>
+            {`Questions? Go to our `}
+            <Link to={`/support`}>
               {`status and support`}
-            </a>
+            </Link>
             {` `}
             {`page.`}
           </p>
@@ -45,15 +58,15 @@ const LoginPage: React.FC = ()=>{
             {`Copyright ©2025 Rightworks LLC. All rights reserved.`}
           </p>
           <p className={`policies`}>
-            <a href={`/#`}>
+            <Link to={`/termsandconditions`}>
               {`Terms and Conditions`}
-            </a>
+            </Link>
             {` `}
             {`|`}
             {` `}
-            <a href={`/#`}>
+            <Link to={`/privacy`}>
               {`Privacy Policy`}
-            </a>
+            </Link>
           </p>
         </div>
       </div>

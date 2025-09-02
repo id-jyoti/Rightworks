@@ -1,12 +1,16 @@
 import {
+  useNavigate,
+} from "react-router-dom";
+import {
   ArrowRight,
 } from "lucide-react";
-const Login= ()=>{
+const Login = ()=>{
+  const navigate = useNavigate ();
+
   const portals = [
     {
       title:   `Rightworks Cloud Hosting`,
       subtitle:`AppHub`,
-      link:    `/login/loginpage`,
       icon:    `/assets/icons/login1.svg`,
     },
     {
@@ -59,7 +63,10 @@ const Login= ()=>{
               <p>
                 {portal.subtitle}
               </p>
-              <button className={`login-btn`}>
+              {/* ✅ Button now navigates to LoginPage.tsx */}
+              <button className={`login-btn`}
+                onClick={()=>navigate (`/loginpage`)}
+              >
                 {`ACCOUNT LOGIN `}
                 <ArrowRight size={16}/>
               </button>
