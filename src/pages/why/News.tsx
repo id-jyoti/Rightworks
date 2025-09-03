@@ -103,18 +103,18 @@ const News: React.FC = ()=>{
       <section className={`news-filters`}>
         <div className={`filter-container`}>
           <input aria-label={`filter`} className={`search-input`}
-            onChange={e => {
-              setSearchTerm(e.target.value);
-            }}
             placeholder={`Search ...`}
             type={`text`}
             value={searchTerm}
+            onChange={e=>{
+              setSearchTerm (e.target.value);
+            }}
           />
           <select className={`filter-dropdown`}
-            onChange={e => {
-              setSelectedCategory(e.target.value);
-            }}
             value={selectedCategory}
+            onChange={e=>{
+              setSelectedCategory (e.target.value);
+            }}
           >
             {categories.map ((cat, i)=>(
               <option key={i} value={cat}>
@@ -123,10 +123,10 @@ const News: React.FC = ()=>{
             ))}
           </select>
           <select className={`filter-dropdown`}
-            onChange={e => {
-              setSelectedBusinessType(e.target.value);
-            }}
             value={selectedBusinessType}
+            onChange={e=>{
+              setSelectedBusinessType (e.target.value);
+            }}
           >
             {businessTypes.map ((type, i)=>(
               <option key={i} value={type}>
@@ -153,7 +153,7 @@ const News: React.FC = ()=>{
         <div className={`news-list`}>
           {filteredNews.length > 0 ?
               filteredNews.map (news=>(
-                <div className={`news-card`} key={news.id}>
+                <div key={news.id} className={`news-card`}>
                   <h3>
                     {news.title}
                   </h3>

@@ -121,17 +121,17 @@ const AppIntegrations: React.FC = ()=>{
           </p>
           {/* Search + Filter */}
           <div className={`search-filter`}>
-            <input aria-label={`search`} onChange={e => {
-                setSearch(e.target.value);
-              }}
-              placeholder={`Search ...`}
+            <input aria-label={`search`} placeholder={`Search ...`}
               type={`text`}
               value={search}
-            />
-            <select onChange={e => {
-                setSelectedCategory(e.target.value);
+              onChange={e=>{
+                setSearch (e.target.value);
               }}
-              value={selectedCategory}
+            />
+            <select value={selectedCategory}
+              onChange={e=>{
+                setSelectedCategory (e.target.value);
+              }}
             >
               {categories.map (cat=>(
                 <option key={cat} value={cat}>
@@ -155,7 +155,7 @@ const AppIntegrations: React.FC = ()=>{
         </h2>
         <div className={`apps-grid`}>
           {filteredApps.map (app=>(
-            <div className={`app-card`} key={app.id}>
+            <div key={app.id} className={`app-card`}>
               <img alt={app.name} src={app.image}/>
               <h3>
                 {app.name}
