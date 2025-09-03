@@ -19,10 +19,7 @@ const Footer = ()=>{
     setEmail,
   ] = useState (``);
 
-  const navigate = useNavigate ();
-
   const handleSubscribe = ()=>{
-    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (! email) {
       console.log (`Please enter a valid email address.`);
 
@@ -82,8 +79,8 @@ const Footer = ()=>{
               placeholder={`Email`}
               type={`email`}
               value={email}
-              onChange={e => {
-                setEmail(e.target.value);
+              onChange={e=>{
+                setEmail (e.target.value);
               }}
             />
             <button className={`footer-btn`} onClick={handleSubscribe}>
